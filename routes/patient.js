@@ -25,7 +25,7 @@ router.get("/current", isAuth, (req, res) => {
  * @method : GET
  * @data : no data
  */
-router.get("/", async (req, res) => {
+router.get("/rendezvous", async (req, res) => {
     try {
         const Rendez = await RendezVous.find();
         res.status(200).send({

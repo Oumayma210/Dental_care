@@ -6,7 +6,7 @@ const RendezSchema = new Schema({
         type: String,
     },
     date: {
-        type: String,
+        type: Date,
     },
 });
 module.exports = RendezVous = mongoose.model("rendez", RendezSchema);
