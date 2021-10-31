@@ -1,0 +1,6 @@
+export const SIGNUP_PATIENT = "SIGNUP_PATIENT";
+export const SIGNIN_PATIENT = "SIGNIN_PATIENT ";
+export const LOAD_PATIENT  = "LOAD_PATIENT ";
+export const FAIL_PATIENT = "FAIL_PATIENT";
+export const LOGOUT_PATIENT  = "LOGOUT_PATIENT ";
+

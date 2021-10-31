@@ -16,7 +16,7 @@ router.post("/signup", registerValidation(), validation, signup);
 router.post("/signin", loginValidation(), validation, signin);
 //current user
 router.get("/current", isAuth, (req, res) => {
-    res.send(req.user);
+    res.send(req.patient);
 });
 //prendre rendezvous
 /**
@@ -38,11 +38,11 @@ router.get("/rendezvous", async (req, res) => {
 });
 /**
  * @desc :edit profile
- *@path : http://localhost:5500/patient/:_id
+ *@path : http://localhost:7500/patient/:_id
  *@method: PUT
  *@data : req.params.id &req.body
  */
- router.put("/:_id", async (req, res) => {
+router.put("/:_id", async (req, res) => {
     try {
         const { _id } = req.params;
         const result = await Patient.findOneAndUpdate(

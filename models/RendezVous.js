@@ -8,5 +8,8 @@ const RendezSchema = new Schema({
     date: {
         type: Date,
     },
+    médicament:String,
+    note:String
+
 });
 module.exports = RendezVous = mongoose.model("rendez", RendezSchema);
