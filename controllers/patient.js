@@ -52,7 +52,7 @@ exports.signin = async (req, res) => {
             process.env.SECRET_KEY,
             { expiresIn: "1h" }
         );
-        res.status(200).send({ msg: "login successfully", user: foundPatient,token });
+        res.status(200).send({ msg: "login successfully", patient: foundPatient,token });
     } catch (error) {
         res.status(400).send({ msg: "cannot login" });
     }
