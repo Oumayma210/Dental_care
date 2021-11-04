@@ -4,14 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { GetAllPatient } from "./../JS/actions/doctor";
 const PatientsList = () => {
     const dispatch = useDispatch();
-    const getAllPatient = useSelector(
-        (state) => state.doctorReducer.getAllPatient
-    );
+    const patient = useSelector((state) => state.doctorReducer.patient);
     const load = useSelector((state) => state.doctorReducer.load);
     useEffect(() => {
         dispatch(GetAllPatient());
     }, [dispatch]);
-    console.log(getAllPatient);
+    console.log(patient);
     return (
         <div
             style={{
@@ -20,11 +18,7 @@ const PatientsList = () => {
                 justifyContent: "space-around",
             }}
         >
-            {load ? (
-                <h2>spinner</h2>
-            ) : (
-                getAllPatient.map((el) => <p>{el.doctorName}</p>)
-            )}
+            {load ? <h2>spinner</h2> : patient.map((el) => <p>{el.email}</p>)}
         </div>
     );
 };

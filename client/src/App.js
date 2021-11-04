@@ -11,6 +11,8 @@ import SignIn from "./pages/PatientPages/SignIn";
 import Profile from "./pages/PatientPages/Profile";
 import Error from "./pages/PublicPages/Error";
 import Doctor from "./pages/DoctorPages/Doctor";
+import SigninDoc from "./pages/DoctorPages/SigninDoc";
+import PatientsList from "./Components/PatientsList";
 function App() {
     return (
         <div className="App">
@@ -27,6 +29,9 @@ function App() {
                 <Route path="/signin" component={SignIn} />
                 <Route path="/profile" component={Profile} />
                 <Route path="/doctorroute" component={Doctor} />
+                <Route path="/patientList" component={PatientsList} />
+
+                <Route path="/signIn" component={SigninDoc} />
                 <Route path="/*" component={Error} />
             </Switch>
             <Footer />

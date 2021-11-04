@@ -5,27 +5,27 @@ import {
     GET_PATIENT_BY_ID,
 } from "../actiontypes/doctor";
 import { LOAD, SIGNIN_DOCTOR } from "./../actiontypes/doctor";
-import { axios } from "axios";
+import axios from "axios";
 ///////////////////////CRUD_ADMIN//////////////////////////
 //Signin doctor
-export const signin = (patient, history) => async (dispatch) => {
+export const signin = (doctor, history) => async (dispatch) => {
     dispatch({ type: LOAD });
     try {
-        let result = await axios.post("/doctor/signin", patient);
+        let result = await axios.post("/doctor/signin", doctor);
         dispatch({ type: SIGNIN_DOCTOR, payload: result.data });
-        history.push("/profile");
+        history.push("/doctorroute");
     } catch (error) {
         dispatch({ type: FAILED, payload: error.response.data.errors });
     }
 };
 //add admin
-export const addAdmin = (newDoctor) => async (dispatch) => {
-    try {
-        await axios.post("/doctor/add_admin", newDoctor);
-    } catch (error) {
-        dispatch({ type: FAILED, payload: error.response });
-    }
-};
+// export const addAdmin = (newDoctor) => async (dispatch) => {
+//     try {
+//         await axios.post("/doctor/add_admin", newDoctor);
+//     } catch (error) {
+//         dispatch({ type: FAILED, payload: error.response });
+//     }
+// };
 ///////////////////////CRUD_PATIENT//////////////////////////
 //get all patients
 export const GetAllPatient = () => async (dispatch) => {
@@ -47,7 +47,7 @@ export const GetAllPatient = () => async (dispatch) => {
 export const getPatient = (id) => async (dispatch) => {
     dispatch({ type: LOAD });
     try {
-        let result = await axios.get(`/doctor/:${id}`);
+        let result = await axios.get(`/doctor/${id}`);
         dispatch({
             type: GET_PATIENT_BY_ID,
             payload: result.data,

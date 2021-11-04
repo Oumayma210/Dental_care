@@ -70,8 +70,14 @@ exports.signin = async (req, res) => {
     }
 };
 exports.getAllPatient = async (req, res) => {
-    const getAllPatient = await Patient.find().select();
-    res.status(200).json(getAllPatient);
+    try {
+        const patient = await Patient.find();
+        res.status(200).send({
+            patient,
+        });
+    } catch (error) {
+        res.status(400).send({ msg: "failed", error });
+    }
 };
 // exports.getAllRendezvous = async (req, res) => {
 //     const rdv = await RendezVous.find().select();
@@ -79,10 +85,9 @@ exports.getAllPatient = async (req, res) => {
 // };
 exports.getAllRendezvous = async (req, res) => {
     try {
-        const rdv = await RendezVous.find();
+        const Rendez = await RendezVous.find();
         res.status(200).send({
-            msg: "this the list of available meeting",
-            rdv,
+            Rendez,
         });
     } catch (error) {
         res.status(400).send({ msg: "failed", error });

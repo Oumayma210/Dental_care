@@ -6,8 +6,7 @@ import {
 } from "../actiontypes/doctor";
 import { LOAD, SIGNIN_DOCTOR } from "./../actiontypes/doctor";
 const initialState = {
-    patientList: {},
-    patient: {},
+    patient: [],
     load: false,
     errors: [],
     isAuth: false,
@@ -28,10 +27,11 @@ const doctorReducer = (state = initialState, { type, payload }) => {
         case GET_ALLPATIENTS:
             return {
                 ...state,
-                patientList: payload.patientList,
+                load: false,
+                patient: payload.patient,
             };
         case GET_PATIENT_BY_ID:
-            return { ...state, patient: payload };
+            return { ...state, load: false, patient: payload };
 
         case GET_ALLRENDEZVOUS:
             return {
