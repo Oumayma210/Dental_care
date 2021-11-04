@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // import { Spinner } from "react-bootstrap";
-import { GetAllPatients } from "./../JS/actions/doctor";
+import { GetAllPatient } from "./../JS/actions/doctor";
 const PatientsList = () => {
     const dispatch = useDispatch();
-    const patient = useSelector((state) => state.doctorReducer.patient);
+    const getAllPatient = useSelector(
+        (state) => state.doctorReducer.getAllPatient
+    );
     const load = useSelector((state) => state.doctorReducer.load);
     useEffect(() => {
-        dispatch(GetAllPatients());
+        dispatch(GetAllPatient());
     }, [dispatch]);
-    console.log(patient);
+    console.log(getAllPatient);
     return (
         <div
             style={{
@@ -18,7 +20,11 @@ const PatientsList = () => {
                 justifyContent: "space-around",
             }}
         >
-            {load ? <h2>spinner</h2> : patient.map((el) => <p>{el.name}</p>)}
+            {load ? (
+                <h2>spinner</h2>
+            ) : (
+                getAllPatient.map((el) => <p>{el.doctorName}</p>)
+            )}
         </div>
     );
 };

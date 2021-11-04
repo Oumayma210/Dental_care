@@ -70,8 +70,8 @@ exports.signin = async (req, res) => {
     }
 };
 exports.getAllPatient = async (req, res) => {
-    const patient = await Patient.find().select();
-    res.status(200).json(patient);
+    const getAllPatient = await Patient.find().select();
+    res.status(200).json(getAllPatient);
 };
 // exports.getAllRendezvous = async (req, res) => {
 //     const rdv = await RendezVous.find().select();

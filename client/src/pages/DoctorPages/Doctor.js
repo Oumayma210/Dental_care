@@ -1,8 +1,12 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import { Button } from "react-bootstrap";
+import PatientsList from "../../Components/PatientsList";
+
 const Doctor = () => {
-    return <div>Doctor page</div>;
+    return (
+        <div>
+            <PatientsList />
+        </div>
+    );
 };
 
 export default Doctor;
