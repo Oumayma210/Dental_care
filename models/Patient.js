@@ -18,7 +18,6 @@ const patientSchema = new Schema({
     nickname: {
         type: String,
         unique: true,
-        required: true,
     },
     age: Number,
     phone: Number,

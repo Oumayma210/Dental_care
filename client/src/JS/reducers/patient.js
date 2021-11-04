@@ -4,6 +4,7 @@ import {
     FAIL_PATIENT,
     SIGNIN_PATIENT,
     LOGOUT_PATIENT,
+    GET_RENDEZVOUS,
 } from "./../actiontypes/patient";
 //initial state
 const initialState = {
@@ -11,6 +12,7 @@ const initialState = {
     load_patient: false,
     errors: [],
     isAuth: false,
+    Rendez: [],
 };
 //pure function
 const patientReducer = (state = initialState, { type, payload }) => {
@@ -42,6 +44,12 @@ const patientReducer = (state = initialState, { type, payload }) => {
                 load_patient: false,
                 errors: [],
                 isAuth: false,
+            };
+        case GET_RENDEZVOUS:
+            return {
+                ...state,
+                load: false,
+                Rendez: payload.Rendez,
             };
         default:
             return state;

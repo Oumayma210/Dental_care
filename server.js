@@ -14,7 +14,7 @@ app.use(express.json());
 //routes
 app.use("/patient", require("./routes/patient"));
 app.use("/doctor", require("./routes/doctor"));
-app.use("/rendezvous", require("./routes/rendezvous"));
+
 //creation of server
 app.listen(PORT, (error) => {
     error

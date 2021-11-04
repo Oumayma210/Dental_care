@@ -5,7 +5,7 @@ const Patient = require("../models/Patient");
 //is auth or not
 const isAuth = async (req, res, next) => {
     try {
-        const token = req.headers["Authorization"];
+        const token = req.header("Authorization");
         if (!token) {
             res.status(401).send({ errors: [{ msg: "not authorized" }] });
         }
@@ -17,7 +17,6 @@ const isAuth = async (req, res, next) => {
             });
         }
         req.user = foundPatient;
-        
         next();
     } catch (error) {
         res.status(401).send({ errors: [{ msg: "nnnot authorized" }] });
