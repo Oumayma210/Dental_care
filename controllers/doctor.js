@@ -87,12 +87,14 @@ exports.getAllRendezvous = async (req, res) => {
     try {
         const Rendez = await RendezVous.find();
         res.status(200).send({
+            msg: "The List of RDV",
             Rendez,
         });
     } catch (error) {
         res.status(400).send({ msg: "failed", error });
     }
 };
+
 exports.addPatient = async (req, res) => {
     const { name, email, password, nickname, phone, age } = req.body;
     try {

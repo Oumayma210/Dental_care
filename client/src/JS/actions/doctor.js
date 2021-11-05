@@ -60,9 +60,9 @@ export const getPatient = (id) => async (dispatch) => {
     }
 };
 //delete patient
-export const deletePatient = (id) => async (dispatch) => {
+export const deletePatient = (_id) => async (dispatch) => {
     try {
-        await axios.delete(`/doctor/:${id}`);
+        await axios.delete(`/doctor/${_id}`);
         dispatch(GetAllPatient());
     } catch (error) {
         dispatch({ type: FAILED, payload: error.response });
@@ -82,7 +82,7 @@ export const addPatient = (newPatient) => async (dispatch) => {
 export const getAllRendezvous = () => async (dispatch) => {
     dispatch({ type: LOAD });
     try {
-        let result = await axios.get("/doctor/getallrv");
+        let result = await axios.get("/doctor/allrdv");
         dispatch({
             type: GET_ALLRENDEZVOUS,
             payload: result.data,

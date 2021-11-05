@@ -18,9 +18,9 @@ router.get("/current", isAuthdoc, (req, res) => {
 router.get("/", doctor.getAllPatient);
 router.get("/:id", doctor.getPatient);
 router.post("/add", doctor.addPatient);
-router.delete("/:id", doctor.deletePatient);
+router.delete("/:_id", doctor.deletePatient);
 //doctor--rendezvous
-router.get("/getallrv", doctor.getAllRendezvous);
+router.get("/allrdv", doctor.getAllRendezvous);
 router.put("/:id", doctor.editRendez);
 router.post("/addrdv", doctor.addrdv);
 module.exports = router;
