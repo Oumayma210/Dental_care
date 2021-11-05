@@ -2,14 +2,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const RendezSchema = new Schema({
-    PatientId: {
+    PatientName: {
         type: String,
     },
     date: {
         type: Date,
     },
-    médicament:String,
-    note:String
-
+    médicament: String,
+    note: String,
 });
 module.exports = RendezVous = mongoose.model("rendez", RendezSchema);

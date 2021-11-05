@@ -165,13 +165,13 @@ exports.editRendez = async (req, res) => {
 };
 exports.addrdv = async (req, res) => {
     try {
-        const { PatientId, date } = req.body;
+        const { PatientName, date } = req.body;
         const rendezvous = await RendezVous.findOne({ date: date });
         if (rendezvous) {
             res.status(400).send({ msg: "date reserved" });
         }
         const newRendezVous = new RendezVous({
-            PatientId,
+            PatientName,
             date,
         });
         await newRendezVous.save();
