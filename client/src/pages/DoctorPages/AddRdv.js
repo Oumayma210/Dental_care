@@ -70,7 +70,7 @@ const AddRdv = () => {
                     placeholder="note"
                     onChange={handleChange}
                 />
-                <Link to="/allrdv">
+                <Link to="/rendezvous">
                     <Button onClick={() => add()}>ADD</Button>
                 </Link>
             </div>

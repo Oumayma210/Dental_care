@@ -2,12 +2,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const RendezSchema = new Schema({
-    PatientName: {
-        type: String,
-    },
-    date: {
-        type: Date,
-    },
+    PatientName: String,
+    date: Date,
     médicament: String,
     note: String,
 });

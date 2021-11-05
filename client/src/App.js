@@ -13,8 +13,8 @@ import Error from "./pages/PublicPages/Error";
 import Doctor from "./pages/DoctorPages/Doctor";
 import SigninDoc from "./pages/DoctorPages/SigninDoc";
 import PatientsList from "./Components/PatientsList";
-import AddRdv from './pages/DoctorPages/AddRdv';
-import EditRdv from './pages/DoctorPages/EditRdv';
+import AddRdv from "./pages/DoctorPages/AddRdv";
+import EditRdv from "./pages/DoctorPages/EditRdv";
 function App() {
     return (
         <div className="App">
@@ -22,12 +22,12 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
-                
-                   {/* rdv */}
+
+                {/* rdv */}
                 <Route path="/rendezvous" component={RendezVous} />
                 <Route path="/addrdv" component={AddRdv} />
                 <Route path="/editrdv" component={EditRdv} />
-                   {/* patient */}
+                {/* patient */}
 
                 <Route path="/signup" component={Signup} />
                 <Route path="/signin" component={SignIn} />
@@ -36,8 +36,7 @@ function App() {
                     path="/Edit/:id"
                     render={(props) => <Edit {...props} />}
                 />
-                                  {/* Doctor */}
-
+                {/* Doctor */}
 
                 <Route path="/doctorroute" component={Doctor} />
                 <Route path="/patientList" component={PatientsList} />

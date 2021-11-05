@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <div id="container">
-            {/* <div id="part1">
+            <div id="part1">
                 <div id="companyinfo">
                     {" "}
                     <a id="sitelink" href="#">
@@ -67,7 +67,7 @@ const Footer = () => {
                     <i className="material-icons tiny"> </i>copyright
                     2019 BBbootstrap - All right reserved
                 </p>
-            </div> */}
+            </div>
         </div>
     );
 };

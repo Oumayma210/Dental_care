@@ -27,7 +27,7 @@ exports.signup = async (req, res) => {
             { expiresIn: "48h" }
         );
         res.status(200).send({
-            msg: "signup successfullu",
+            msg: "signup successfully",
             patient: newPatient,
             token,
         });

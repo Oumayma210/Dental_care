@@ -71,7 +71,7 @@ const EditRdv = ({ match }) => {
                     placeholder="note"
                     onChange={handleChange}
                 />
-                <Link to="/allrdv">
+                <Link to="/rendezvous">
                     <Button onClick={() => editRendez()}>Edit</Button>
                 </Link>
             </div>

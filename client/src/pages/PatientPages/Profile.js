@@ -30,5 +30,4 @@ const Profile = ({ history, match }) => {
         </div>
     );
 };
-
 export default Profile;

@@ -4,6 +4,7 @@ const doctor = require("../controllers/doctor");
 const router = express.Router();
 const isAuthdoc = require("../middleware/authdoc");
 const { validation, loginValidation } = require("../middleware/validator");
+const patient = require("../controllers/patient");
 
 //doctor
 // add doctor
@@ -20,7 +21,8 @@ router.get("/:id", doctor.getPatient);
 router.post("/add", doctor.addPatient);
 router.delete("/:_id", doctor.deletePatient);
 //doctor--rendezvous
-router.get("/allrdv", doctor.getAllRendezvous);
+// router.get("/allrdv", doctor.getAllRendezVous);
+router.get("/allrdv", patient.rendezvous);
 router.put("/:id", doctor.editRendez);
 router.post("/addrdv", doctor.addrdv);
 module.exports = router;
