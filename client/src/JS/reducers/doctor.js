@@ -9,7 +9,7 @@ const initialState = {
     patient: [],
     load: false,
     errors: [],
-    isAuth: false,
+    isAuthdoc: false,
     RdvList: [],
 };
 //pure function
@@ -22,7 +22,7 @@ const doctorReducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 load: false,
-                isAuth: true,
+                isAuthdoc: true,
             };
         case GET_ALLPATIENTS:
             return {

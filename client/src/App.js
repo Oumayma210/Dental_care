@@ -20,7 +20,7 @@ function App() {
         <div className="App">
             <Navigation />
             <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={Home} />
                 <Route path="/about" component={About} />
 
                 {/* rdv */}
@@ -40,7 +40,7 @@ function App() {
 
                 <Route path="/doctorroute" component={Doctor} />
                 <Route path="/patientList" component={PatientsList} />
-                <Route path="/signIn" component={SigninDoc} />
+                <Route path="/doctor/signin" component={SigninDoc} />
                 <Route path="/*" component={Error} />
             </Switch>
             <Footer />

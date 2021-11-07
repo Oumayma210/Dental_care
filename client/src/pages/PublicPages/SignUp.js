@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signup } from "../../JS/actions/patient";
-
+import RendezVousList from "./../../Components/RendezVous/RendezVousList";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 const Signup = ({ history }) => {
     const [newPatient, setNewPatient] = useState({});
     const dispatch = useDispatch();
@@ -57,8 +59,14 @@ const Signup = ({ history }) => {
             <button onClick={() => dispatch(signup(newPatient, history))}>
                 SignUp
             </button>
+            {/* <RendezVousList /> */}
+            <div>
+                <p>If you have already account click here!!</p>
+                <Link to="/signin">
+                    <Button>Sign In</Button>
+                </Link>
+            </div>
         </div>
     );
 };
-
 export default Signup;

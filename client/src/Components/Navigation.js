@@ -5,23 +5,35 @@ import { useDispatch, useSelector } from "react-redux";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 const Navigation = () => {
-    const isAuth = useSelector((state) => state.patientReducer.isAuth);
-    const dispatch = useDispatch();
+    // const isAuth = useSelector((state) => state.patientReducer.isAuth);
+    // const dispatch = useDispatch();
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">Cabinet Dentaire</Navbar.Brand>
+                <Navbar.Brand href="/home">Cabinet Dentaire</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Link to="/">
-                            <Nav.Link href="#features">Accueil</Nav.Link>
+                        <Link to="/home">
+                            <Nav.Link eventKey={2} href="#features">Accueil</Nav.Link>
                         </Link>
-                        <Nav.Link href="#features">Nos services</Nav.Link>
+                        <Nav.Link eventKey={2} href="#features">Nos services</Nav.Link>
                         <Nav.Link href="#pricing">
-                            <Link to="/rendezvous">
-                                <a href="/rendezvous">Rendez-Vous</a>
-                            </Link>
+                            <Nav.Link eventKey={2} href="RendezVous">
+                                <a href="/signup">Rendez-Vous</a>
+                            </Nav.Link>
+                        </Nav.Link>
+                    </Nav>
+
+                    <Nav>
+                        <Nav.Link eventKey={2} href="EspaceDoctor">
+                            <a
+                                href="/doctor/signin
+                            "
+                            >
+                                {" "}
+                                Espace Doctor
+                            </a>
                         </Nav.Link>
                     </Nav>
                     <Nav>

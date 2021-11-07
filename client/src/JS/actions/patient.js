@@ -14,7 +14,7 @@ export const signup = (newPatient, history) => async (dispatch) => {
         dispatch({ type: SIGNUP_PATIENT, payload: result.data });
         history.push("/profile");
     } catch (error) {
-        dispatch({ type: FAIL_PATIENT, payload: error.response.data.errors });
+        dispatch({ type: FAIL_PATIENT, payload: error.response });
     }
 };
 
@@ -25,9 +25,10 @@ export const signin = (patient, history) => async (dispatch) => {
         dispatch({ type: SIGNIN_PATIENT, payload: result.data });
         history.push("/profile");
     } catch (error) {
-        dispatch({ type: FAIL_PATIENT, payload: error.response.data.errors });
+        dispatch({ type: FAIL_PATIENT, payload: error.response });
     }
 };
+
 //LOGOUT
 export const logout = () => {
     return {

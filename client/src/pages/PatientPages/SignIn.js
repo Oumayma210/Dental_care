@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signin } from "../../JS/actions/patient";
+import RendezVousList from './../../Components/RendezVous/RendezVousList';
 
 const SignIn = ({ history }) => {
     const [patient, setpatient] = useState({});
@@ -29,6 +30,8 @@ const SignIn = ({ history }) => {
             <button onClick={() => dispatch(signin(patient, history))}>
                 SignIn
             </button>
+            {/* <RendezVousList /> */}
+
         </div>
     );
 };

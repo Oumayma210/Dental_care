@@ -13,7 +13,6 @@ const PatientCard = ({ patient }) => {
                 </Card.Subtitle>
                 <Card.Text>{patient.age}</Card.Text>
                 <Card.Text>{patient.phone}</Card.Text>
-                <Button onClick={() => ({})}>Description</Button>
                 <Button onClick={() => dispatch(deletePatient(patient._id))}>
                     DELETE
                 </Button>

@@ -1,11 +1,10 @@
-import React from "react";
-// import PatientsList from "../../Components/PatientsList";
+import React from 'react'
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 const Doctor = () => {
     return (
         <div>
-            <Link to="/patientList">
+               <Link to="/patientList">
                 <Button> Patient List </Button>
             </Link>
             <Link to="/addrdv">
@@ -16,7 +15,7 @@ const Doctor = () => {
                 <Button> Edit Rendez-Vous </Button>
             </Link>
         </div>
-    );
-};
+    )
+}
 
-export default Doctor;
+export default Doctor

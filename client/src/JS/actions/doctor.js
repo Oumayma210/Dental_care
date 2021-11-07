@@ -8,7 +8,7 @@ import { LOAD, SIGNIN_DOCTOR } from "./../actiontypes/doctor";
 import axios from "axios";
 ///////////////////////CRUD_ADMIN//////////////////////////
 //Signin doctor
-export const signin = (doctor, history) => async (dispatch) => {
+export const signIn = (doctor, history) => async (dispatch) => {
     dispatch({ type: LOAD });
     try {
         let result = await axios.post("/doctor/signin", doctor);
