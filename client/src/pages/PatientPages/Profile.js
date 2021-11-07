@@ -1,40 +1,62 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from './../../JS/actions/patient';
-import RendezVousList from './../../Components/RendezVous/RendezVousList';
+import { logout } from "./../../JS/actions/patient";
 const Profile = ({ history, match }) => {
     const patient = useSelector((state) => state.patientReducer.patient);
     // const isAuth = useSelector((state) => state.patientReducer.isAuth);
-const dispatch = useDispatch()
+    const dispatch = useDispatch();
     return (
         <div>
-            This the profile
-            <h4>{patient.name}</h4>
-            <h4>{patient.email}</h4>
-            <h4>{patient.phone}</h4>
-            <Link to="/home" >
-            <Button
-                style={{
-                    width: "90px",
-                    height: "40px",
-                    color: "white",
-                    backgroundColor: "black",
-                    fontSize: "16px",
-                    fontStyle: "italic",
-                }}
-                onClick={() => dispatch(logout())}
-            >
-                LogOut
-            </Button>
-            </Link>
             <h1 style={{ fontStyle: "italic" }}>Profile </h1>
-            <Link to={`/Edit/:${patient._id}`}>
-                <Button>Edit</Button>
+            <div className="container mt-4 mb-4 p-3 d-flex justify-content-center">
+                <div className="card p-4">
+                    <div className=" image d-flex flex-column justify-content-center align-items-center">
+                        {" "}
+                        <button className="btn btn-secondary">
+                            {" "}
+                            {/* <img
+                                src="https://i.imgur.com/wvxPV9S.png"
+                                height={100}
+                                width={100}
+                            /> */}
+                        </button>{" "}
+                        <span className="name mt-3"> {patient.name}</span>{" "}
+                        <span className="idd">{patient.email}</span>
+                        <div className="d-flex flex-row justify-content-center align-items-center gap-2">
+                            {" "}
+                            <span className="idd1">{patient.age}</span>{" "}
+                        </div>
+                        <div className="d-flex flex-row justify-content-center align-items-center mt-3">
+                            {" "}
+                            <span className="number">
+                                <span className="follow">{patient.phone}</span>
+                            </span>{" "}
+                        </div>
+                        <div className=" d-flex mt-2">
+                            {" "}
+                            <Link to={`/Edit/:${patient._id}`}>
+                                <button className="btn1 btn-dark">
+                                    {" "}
+                                    Edit{" "}
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Link to="/home">
+                <button
+                    className="btn1 btn-dark"
+                    onClick={() => dispatch(logout())}
+                >
+                    LogOut
+                </button>
             </Link>
-                        <RendezVousList />
-
+            <Link to="/rdv">
+                <button>Available Rendez-vous</button>
+            </Link>
+            
         </div>
     );
 };

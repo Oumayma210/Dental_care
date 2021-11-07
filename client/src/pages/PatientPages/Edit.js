@@ -20,7 +20,7 @@ const Edit = ({ match }) => {
         setNewPatient({ ...newPatient, [e.target.name]: e.target.value });
     };
     const edit = () => dispatch(editProfile(match.params.id, newPatient));
-    console.log(newPatient)
+    console.log(newPatient);
     return (
         <div>
             <h2>Edit profile patient</h2>
@@ -46,7 +46,7 @@ const Edit = ({ match }) => {
                 <label htmlFor="email">email</label>
                 <input
                     style={{ width: "400px", textAlign: "center" }}
-                    type="text"
+                    type="email"
                     name="email"
                     value={newPatient.email}
                     placeholder="enter your email"
@@ -59,7 +59,7 @@ const Edit = ({ match }) => {
                         width: "400px",
                         textAlign: "center",
                     }}
-                    type="text"
+                    type="password"
                     name="password"
                     value={newPatient.password}
                     placeholder="enter your password"
@@ -83,7 +83,7 @@ const Edit = ({ match }) => {
                         width: "400px",
                         textAlign: "center",
                     }}
-                    type="text"
+                    type="number"
                     name="age"
                     value={newPatient.age}
                     placeholder="enter your age"
@@ -95,7 +95,7 @@ const Edit = ({ match }) => {
                         width: "400px",
                         textAlign: "center",
                     }}
-                    type="text"
+                    type="phone"
                     name="phone"
                     value={newPatient.phone}
                     placeholder="enter your phone"

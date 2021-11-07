@@ -14,58 +14,66 @@ const Signup = ({ history }) => {
     return (
         <div>
             <h2>Signup</h2>
-            <label>Name</label>
-            <input
-                type="text"
-                name="name"
-                placeholder="Enter your Name .."
-                onChange={handleChange}
-            />
-            <label>Email</label>
-            <input
-                type="text"
-                name="email"
-                placeholder="Enter your email .."
-                onChange={handleChange}
-            />
-            <label>Password</label>
-            <input
-                type="text"
-                name="password"
-                placeholder="Enter your password .."
-                onChange={handleChange}
-            />
-            <label>Nickname</label>
-            <input
-                type="text"
-                name="nickname"
-                placeholder="Enter your nickname .."
-                onChange={handleChange}
-            />
-            <label>age</label>
-            <input
-                type="number"
-                name="age"
-                placeholder="Enter your age .."
-                onChange={handleChange}
-            />
-            <label>Phone</label>
-            <input
-                type="number"
-                name="phone"
-                placeholder="Enter your phone .."
-                onChange={handleChange}
-            />
-            <button onClick={() => dispatch(signup(newPatient, history))}>
-                SignUp
-            </button>
-            {/* <RendezVousList /> */}
-            <div>
-                <p>If you have already account click here!!</p>
-                <Link to="/signin">
-                    <Button>Sign In</Button>
-                </Link>
-            </div>
+            <form className="w3-container">
+                <label>Name</label>
+                <input
+                    className="w3-input"
+                    type="text"
+                    name="name"
+                    placeholder="Enter your Name .."
+                    onChange={handleChange}
+                />
+                <label>Email</label>
+                <input
+                    className="w3-input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email .."
+                    onChange={handleChange}
+                />
+                <label>Password</label>
+                <input
+                    className="w3-input"
+                    type="password"
+                    name="password"
+                    placeholder="Enter your password .."
+                    onChange={handleChange}
+                />
+                <label>Nickname</label>
+                <input
+                    className="w3-input"
+                    type="text"
+                    name="nickname"
+                    placeholder="Enter your nickname .."
+                    onChange={handleChange}
+                />
+                <label>age</label>
+                <input
+                    className="w3-input"
+                    type="number"
+                    name="age"
+                    placeholder="Enter your age .."
+                    onChange={handleChange}
+                />
+                <label>Phone</label>
+                <input
+                    className="w3-input"
+                    type="number"
+                    name="phone"
+                    placeholder="Enter your phone .."
+                    onChange={handleChange}
+                />
+                <button onClick={() => dispatch(signup(newPatient, history))}>
+                    SignUp
+                </button>
+                {/* <RendezVousList /> */}
+                <div>
+                    <p>If you have already account click here!!</p>
+                    <Link to="/signin">
+                        <Button>Sign In</Button>
+                    </Link>
+                </div>
+            </form>
         </div>
     );
 };

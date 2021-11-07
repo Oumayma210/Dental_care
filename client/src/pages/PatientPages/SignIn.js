@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signin } from "../../JS/actions/patient";
-import RendezVousList from './../../Components/RendezVous/RendezVousList';
 
 const SignIn = ({ history }) => {
     const [patient, setpatient] = useState({});
@@ -15,14 +14,16 @@ const SignIn = ({ history }) => {
             <h2>SignIn</h2>
             <label>Email</label>
             <input
-                type="text"
+                icon="envelope"
+                type="email"
                 name="email"
                 placeholder="Enter your Email .."
                 onChange={handleChange}
             />
             <label>Password</label>
             <input
-                type="text"
+                icon="lock"
+                type="password"
                 name="password"
                 placeholder="Enter your password .."
                 onChange={handleChange}
@@ -31,7 +32,6 @@ const SignIn = ({ history }) => {
                 SignIn
             </button>
             {/* <RendezVousList /> */}
-
         </div>
     );
 };

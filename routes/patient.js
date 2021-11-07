@@ -22,5 +22,5 @@ router.get("/current", isAuth, (req, res) => {
 });
 router.get("/rendezvous", patient.rendezvous);
 router.put("/:_id", patient.editProfile);
-
+// router.post("/availablerdv", patient.availablerendezvous);
 module.exports = router;

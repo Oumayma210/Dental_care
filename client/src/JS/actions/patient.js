@@ -1,4 +1,5 @@
 import axios from "axios";
+import { getAllRendezvous } from "../actions/doctor"
 import {
     LOAD_PATIENT,
     SIGNUP_PATIENT,
@@ -51,6 +52,14 @@ export const getRendezvous = () => async (dispatch) => {
 export const editProfile = (id, newPatient) => async (dispatch) => {
     try {
         await axios.put(`/patient/${id}`, newPatient);
+    } catch (error) {
+        dispatch({ type: FAIL_PATIENT, payload: error.response });
+    }
+};
+export const getdisprdv = (newRDV) => async (dispatch) => {
+    try {
+        await axios.post("/patient/availablerdv", newRDV);
+        dispatch(getAllRendezvous());
     } catch (error) {
         dispatch({ type: FAIL_PATIENT, payload: error.response });
     }

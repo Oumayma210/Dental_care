@@ -8,7 +8,7 @@ const Doctor = () => {
                 <Button> Patient List </Button>
             </Link>
             <Link to="/addrdv">
-                <Button> Rendez-Vous </Button>
+                <Button> Add Rendez-Vous </Button>
             </Link>
             {/* nrmlt nhotha f get all rendezvous taht kol rendez reservée fama edit! */}
             <Link to="/editrdv">

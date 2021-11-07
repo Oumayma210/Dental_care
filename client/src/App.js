@@ -15,6 +15,7 @@ import SigninDoc from "./pages/DoctorPages/SigninDoc";
 import PatientsList from "./Components/PatientsList";
 import AddRdv from "./pages/DoctorPages/AddRdv";
 import EditRdv from "./pages/DoctorPages/EditRdv";
+import RDV from './pages/DoctorPages/RDV';
 function App() {
     return (
         <div className="App">
@@ -41,6 +42,7 @@ function App() {
                 <Route path="/doctorroute" component={Doctor} />
                 <Route path="/patientList" component={PatientsList} />
                 <Route path="/doctor/signin" component={SigninDoc} />
+                <Route path="/rdv" component={RDV} />
                 <Route path="/*" component={Error} />
             </Switch>
             <Footer />

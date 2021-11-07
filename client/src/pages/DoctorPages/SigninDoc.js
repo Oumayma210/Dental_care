@@ -10,17 +10,18 @@ const SigninDoc = ({ history }) => {
     };
     return (
         <div>
+
             <h2>Sign In</h2>
             <label>Email</label>
             <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Enter your Email .."
                 onChange={handleChange}
             />
             <label>Password</label>
             <input
-                type="text"
+                type="password"
                 name="password"
                 placeholder="Enter your password .."
                 onChange={handleChange}

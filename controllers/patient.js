@@ -84,6 +84,29 @@ exports.rendezvous = async (req, res) => {
         res.status(400).send({ msg: "failed", error });
     }
 };
+// exports.availablerendezvous = async (req, res) => {
+//     try {
+//         const { PatientName, date } = req.body;
+//         const rendezvous = await RendezVous.findOne({ date: date });
+//         if (rendezvous) {
+//             res.status(400).send({ msg: "date reserved" });
+//         }
+//         const newRendezVous = new RendezVous({
+//             PatientName,
+//             date,
+//         });
+//         await newRendezVous.save();
+//         res.status(200).send({
+//             msg: "date added succesfully...",
+//             newRendezVous,
+//         });
+//     } catch (error) {
+//         res.status(400).send({
+//             msg: "cannot be added",
+//             error,
+//         });
+//     }
+// };
 /**
  * @desc :edit profile
  *@path : http://localhost:7500/patient/:_id

@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { addRdv } from "../../JS/actions/doctor";
-
+import moment from "moment";
 const AddRdv = () => {
     const dispatch = useDispatch();
     const [newRendezVous, setNewRendezVous] = useState({
@@ -48,7 +48,7 @@ const AddRdv = () => {
                     }}
                     type="text"
                     name="date"
-                    value={newRendezVous.date}
+                    value={newRendezVous.date=moment().format("DD-MM-YYYY HH:mm:ss")}
                     placeholder="enter the date"
                     onChange={handleChange}
                 />
@@ -70,7 +70,7 @@ const AddRdv = () => {
                     placeholder="note"
                     onChange={handleChange}
                 />
-                <Link to="/rendezvous">
+                <Link to="/rdv">
                     <Button onClick={() => add()}>ADD</Button>
                 </Link>
             </div>

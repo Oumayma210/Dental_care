@@ -47,7 +47,7 @@ const EditRdv = ({ match }) => {
                         width: "400px",
                         textAlign: "center",
                     }}
-                    type="text"
+                    type="date"
                     name="date"
                     value={newRendezVous.date}
                     placeholder="enter the date"

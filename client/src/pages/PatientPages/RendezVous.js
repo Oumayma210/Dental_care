@@ -13,7 +13,6 @@ const RendezVous = () => {
             <Link to="\signin">
                 <Button>Sign In</Button>
             </Link>
-
             {/* <RendezVousList /> */}
         </div>
     );

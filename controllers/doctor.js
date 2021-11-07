@@ -168,7 +168,7 @@ exports.addrdv = async (req, res) => {
         const { PatientName, date } = req.body;
         const rendezvous = await RendezVous.findOne({ date: date });
         if (rendezvous) {
-            res.status(400).send({ msg: "date reserved" });
+            res.status(400).send({ msg: "date exist" });
         }
         const newRendezVous = new RendezVous({
             PatientName,
