@@ -7,6 +7,7 @@ import {
 import { LOAD, SIGNIN_DOCTOR } from "./../actiontypes/doctor";
 const initialState = {
     patient: [],
+    patientToGet:{},
     load: false,
     errors: [],
     isAuthdoc: false,
@@ -31,7 +32,7 @@ const doctorReducer = (state = initialState, { type, payload }) => {
                 patient: payload.patient,
             };
         case GET_PATIENT_BY_ID:
-            return { ...state, load: false, patient: payload };
+            return { ...state, load: false, patient: payload.patientToGet };
 
         case GET_ALLRENDEZVOUS:
             return {

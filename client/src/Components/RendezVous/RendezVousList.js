@@ -24,7 +24,7 @@ const RendezVousList = ({ history }) => {
             ) : (
                 Rendez.map((el) => <RdvCard rdv={el} key={el._id} />)
             )}
-            <Link to="/signin">
+            <Link to="/doctor/signin">
                 <button> Go back</button>
             </Link>{" "}
         </div>

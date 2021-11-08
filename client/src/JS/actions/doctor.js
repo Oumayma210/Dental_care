@@ -45,7 +45,6 @@ export const GetAllPatient = () => async (dispatch) => {
 };
 //get patient
 export const getPatient = (id) => async (dispatch) => {
-    dispatch({ type: LOAD });
     try {
         let result = await axios.get(`/doctor/${id}`);
         dispatch({
@@ -107,8 +106,8 @@ export const addRdv = (newRDV) => async (dispatch) => {
 export const editRDV = (id, newRDV) => async (dispatch) => {
     try {
         await axios.put(`/doctor/:${id}`, newRDV);
+        dispatch(getPatient(id));
     } catch (error) {
         dispatch({ type: FAILED, payload: error.response });
     }
 };
-

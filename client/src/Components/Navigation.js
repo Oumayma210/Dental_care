@@ -10,11 +10,11 @@ const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="/home">Cabinet Dentaire</Navbar.Brand>
+                <Navbar.Brand href="/">Cabinet Dentaire</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Link to="/home">
+                        <Link to="/">
                             <Nav.Link eventKey={2} href="#features">Accueil</Nav.Link>
                         </Link>
                         <Nav.Link eventKey={2} href="#features">Nos services</Nav.Link>

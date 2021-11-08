@@ -35,7 +35,7 @@ const Home = () => {
             <Carousel>
                 <Carousel.Item>
                     <img
-                        className=" w-50 p-3"
+                        className=" w-25 p-3"
                         src="https://th.bing.com/th/id/OIP.2y9k6bgdSj8foOF7CPEKuQHaE8?pid=ImgDet&rs=1"
                         alt="First slide"
                     />
@@ -49,7 +49,7 @@ const Home = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="w-50 p-3"
+                        className="w-25 p-3"
                         src="https://media.sciencephoto.com/image/f0244175/800wm/F0244175-Prosthetic_dentistry_technician_at_work.jpg"
                         alt="Second slide"
                     />
@@ -64,7 +64,7 @@ const Home = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="w-50 p-3"
+                        className="w-25 p-3"
                         src="https://th.bing.com/th/id/OIP.VwVLHR4_Z9M4ejwwyg3GyQAAAA?pid=ImgDet&w=470&h=320&rs=1"
                         alt="Third slide"
                     />
@@ -78,8 +78,6 @@ const Home = () => {
                     </Carousel.Caption> */}
                 </Carousel.Item>
             </Carousel>
-            
-            
         </div>
     );
 };

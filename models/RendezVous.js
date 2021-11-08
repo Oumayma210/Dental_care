@@ -3,9 +3,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const RendezSchema = new Schema({
     PatientName: String,
-    date: Date,
+    date: { type: String, required: true },
     isReserved: Boolean,
     médicament: String,
     note: String,
+    Numero: Number,
 });
 module.exports = RendezVous = mongoose.model("rendez", RendezSchema);
