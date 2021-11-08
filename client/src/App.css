@@ -8,6 +8,17 @@ body {
     margin: 0;
     padding: 0;
 }
+ul {
+    font-size: 15px;
+    font-family: Corbel
+
+    ;
+}
+h2{display: block;
+    color: #4c6880;
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 5px;}
 
 /* footer */
 footer {

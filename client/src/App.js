@@ -13,10 +13,11 @@ import Error from "./pages/PublicPages/Error";
 import Doctor from "./pages/DoctorPages/Doctor";
 import SigninDoc from "./pages/DoctorPages/SigninDoc";
 import AddRdv from "./pages/PatientPages/AddRdv";
-import EditRdv from "./pages/DoctorPages/EditRdv";
+// import EditRdv from "./pages/DoctorPages/EditRdv";
 import RDV from "./pages/DoctorPages/RDV";
-// import Editmodal from "./pages/DoctorPages/Editmodal";
+import Editmodal from "./pages/DoctorPages/Editmodal";
 import PatientsList from "./Components/PatientsList";
+import PrivateRoute from "./Route/PrivateRoute";
 function App() {
     return (
         <div className="App">
@@ -28,16 +29,20 @@ function App() {
                 {/* rdv */}
                 <Route path="/rendezvous" component={RendezVous} />
                 <Route path="/addrdv" component={AddRdv} />
-                <Route
+                {/* <Route
                     path="/editrdv/:id"
                     render={(props) => <EditRdv {...props} />}
+                /> */}
+                <Route
+                    path="/editrdvmodal/:id"
+                    render={(props) => <Editmodal {...props} />}
                 />
                 {/* patient */}
                 <Route path="/addrdv" component={AddRdv} />
 
                 <Route path="/signup" component={Signup} />
                 <Route path="/signin" component={SignIn} />
-                <Route path="/profile" component={Profile} />
+                <PrivateRoute path="/profile" component={Profile} />
                 {/* <Route
                     path="/Edit/:id"
                     render={(props) => <Edit {...props} />}

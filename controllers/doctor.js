@@ -147,7 +147,16 @@ exports.deletePatient = async (req, res) => {
     }
 };
 
+// exports.getRdv = async (req, res) => {
+//     try {
+//         const RendezToGet = await Rendez.findOne({ _id: req.params.id });
+//         res.status(200).send({ msg: "get one rdv", RendezToGet });
+//     } catch (error) {
+//         res.status(400).send({ msg: "failed", error });
+//     }
+// };
 //doctor+rendezvous=fiche
+
 exports.editRendez = async (req, res) => {
     try {
         const { _id } = req.params;

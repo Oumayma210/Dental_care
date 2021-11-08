@@ -16,16 +16,19 @@ const Navigation = () => {
                     <Nav className="me-auto">
                         <Link to="/">
                             <Nav.Link eventKey={2} href="#features">
-                                Accueil
+                                <a href="/">Accueil</a>
+                            </Nav.Link>
+                        </Link>
+                        <Link to="/about">
+                            <Nav.Link eventKey={2} href="About">
+                                About
                             </Nav.Link>
                         </Link>
                         <Nav.Link eventKey={2} href="#features">
                             Nos services
                         </Nav.Link>
-                        <Nav.Link href="#pricing">
-                            <Nav.Link eventKey={2} href="RendezVous">
-                                <a href="/signup">Rendez-Vous</a>
-                            </Nav.Link>
+                        <Nav.Link eventKey={2} href="RendezVous">
+                            <a href="/signup">Rendez-Vous</a>
                         </Nav.Link>
                     </Nav>
 
