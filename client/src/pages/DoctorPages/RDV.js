@@ -1,13 +1,12 @@
 import React from "react";
 import RendezVousList from "../../Components/RendezVous/RendezVousList";
-import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
-
+// import { Link } from "react-router-dom";
+// import { Button } from "react-bootstrap";
 
 const RDV = () => {
     return (
         <div>
-            <RendezVousList/>
+            <RendezVousList />
             {/* <Link to="/addrdv">
                 <Button> Add Rendez-Vous </Button>
             </Link> */}

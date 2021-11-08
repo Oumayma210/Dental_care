@@ -131,3 +131,11 @@ exports.editProfile = async (req, res) => {
         });
     }
 };
+exports.getPatientProfile = async (req, res) => {
+    try {
+        const profileToGet = await Patient.findOne({ _id: req.params.id });
+        res.status(200).send({ msg: "get profile patient", profileToGet });
+    } catch (error) {
+        res.status(400).send({ msg: "failed", error });
+    }
+};

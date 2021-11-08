@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signup } from "../../JS/actions/patient";
-import RendezVousList from "./../../Components/RendezVous/RendezVousList";
+// import RendezVousList from "./../../Components/RendezVous/RendezVousList";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 const Signup = ({ history }) => {

@@ -58,6 +58,7 @@ const Profile = () => {
                                 <span className="follow">{patient.phone}</span>
                             </span>{" "}
                         </div>
+                        {/* Edit Profile */}
                         <div className=" d-flex mt-2">
                             {" "}
                             <Button
@@ -139,7 +140,7 @@ const Profile = () => {
                                         type="age"
                                         name="age"
                                         value={newPatient.age}
-                                        placeholder="enter your address"
+                                        placeholder="enter your age"
                                         onChange={handleChange}
                                     />
                                     <br />
@@ -178,7 +179,7 @@ const Profile = () => {
 
             <Link to="/addrdv">
                 <Button className="btn1 btn-dark" size="lg">
-                    Take a RDV{" "}
+                    Prendre Rendez-Vous{" "}
                 </Button>{" "}
             </Link>
             <Link to="/">

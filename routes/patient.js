@@ -23,4 +23,5 @@ router.get("/current", isAuth, (req, res) => {
 router.get("/rendezvous", patient.rendezvous);
 router.put("/:_id", patient.editProfile);
 // router.post("/availablerdv", patient.availablerendezvous);
+router.get("/:id", patient.getPatientProfile);
 module.exports = router;

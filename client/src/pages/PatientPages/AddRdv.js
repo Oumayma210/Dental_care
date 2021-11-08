@@ -11,6 +11,8 @@ const AddRdv = () => {
         date: "",
         médicament: "",
         note: "",
+        Numero: "",
+        message: "",
     });
     const handleChange = (e) => {
         setNewRendezVous({ ...newRendezVous, [e.target.name]: e.target.value });
@@ -49,19 +51,30 @@ const AddRdv = () => {
                     type="text"
                     name="date"
                     value={newRendezVous.date}
-                    placeholder="DD-MM HH"
+                    placeholder="DD-MM HH h"
                     onChange={handleChange}
                 />
-                {/* <label htmlFor="médicament">médicament</label>
+                <label htmlFor="phone">phone </label>
+                <input
+                    style={{ width: "400px", textAlign: "center" }}
+                    type="tel"
+                    name="Numero"
+                    value={newRendezVous.Numero}
+                    placeholder="Enter you phone"
+                    onChange={handleChange}
+                />
+                <label htmlFor="Date de Naissance et message">
+                    Date de Naissance et message
+                </label>
                 <input
                     style={{ width: "400px", textAlign: "center" }}
                     type="text"
-                    name="médicament"
-                    value={newRendezVous.médicament}
-                    placeholder="médicament"
+                    name="message"
+                    value={newRendezVous.message}
+                    placeholder="Date de naissance et message"
                     onChange={handleChange}
                 />
-                <label htmlFor="note">Note</label>
+                {/* <label htmlFor="note">Note</label>
                 <input
                     style={{ width: "400px", textAlign: "center" }}
                     type="text"
@@ -71,7 +84,7 @@ const AddRdv = () => {
                     onChange={handleChange}
                 /> */}
                 <Link to="/">
-                    <Button onClick={() => add()}>ADD</Button>
+                    <Button onClick={() => add()}>Envoyer</Button>
                 </Link>
             </div>
         </div>

@@ -105,8 +105,8 @@ export const addRdv = (newRDV) => async (dispatch) => {
 //editRDV
 export const editRDV = (id, newRDV) => async (dispatch) => {
     try {
-        await axios.put(`/doctor/:${id}`, newRDV);
-        dispatch(getPatient(id));
+        await axios.put(`/doctor/${id}`, newRDV);
+        dispatch(getAllRendezvous());
     } catch (error) {
         dispatch({ type: FAILED, payload: error.response });
     }

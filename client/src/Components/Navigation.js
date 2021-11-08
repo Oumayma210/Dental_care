@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { logout } from "./../JS/actions/patient";
-import { useDispatch, useSelector } from "react-redux";
+// import { logout } from "./../JS/actions/patient";
+// import { useDispatch, useSelector } from "react-redux";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 const Navigation = () => {
@@ -15,9 +15,13 @@ const Navigation = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Link to="/">
-                            <Nav.Link eventKey={2} href="#features">Accueil</Nav.Link>
+                            <Nav.Link eventKey={2} href="#features">
+                                Accueil
+                            </Nav.Link>
                         </Link>
-                        <Nav.Link eventKey={2} href="#features">Nos services</Nav.Link>
+                        <Nav.Link eventKey={2} href="#features">
+                            Nos services
+                        </Nav.Link>
                         <Nav.Link href="#pricing">
                             <Nav.Link eventKey={2} href="RendezVous">
                                 <a href="/signup">Rendez-Vous</a>

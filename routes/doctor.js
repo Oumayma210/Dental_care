@@ -21,7 +21,6 @@ router.get("/:id", doctor.getPatient);
 router.post("/add", doctor.addPatient);
 router.delete("/:_id", doctor.deletePatient);
 //doctor--rendezvous
-// router.get("/allrdv", doctor.getAllRendezVous);
 router.get("/allrdv", patient.rendezvous);
 router.put("/:id", doctor.editRendez);
 router.post("/addrdv", doctor.addrdv);
