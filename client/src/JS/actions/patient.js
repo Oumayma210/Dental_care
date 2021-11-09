@@ -74,11 +74,11 @@ export const editProfile = (id, newPatient) => async (dispatch) => {
     }
 };
 
-export const getdisprdv = (newRDV) => async (dispatch) => {
-    try {
-        await axios.post("/patient/availablerdv", newRDV);
-        dispatch(getAllRendezvous());
-    } catch (error) {
-        dispatch({ type: FAIL_PATIENT, payload: error.response });
-    }
-};
+// export const getdisprdv = (newRDV) => async (dispatch) => {
+//     try {
+//         await axios.post("/patient/availablerdv", newRDV);
+//         dispatch(getAllRendezvous());
+//     } catch (error) {
+//         dispatch({ type: FAIL_PATIENT, payload: error.response });
+//     }
+// };

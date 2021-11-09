@@ -162,7 +162,7 @@ exports.editRendez = async (req, res) => {
         const { _id } = req.params;
         const result = await RendezVous.findOneAndUpdate(
             { _id },
-            { $set: { ...req.body } }
+            { $set: { ...req.body}}
         );
         res.status(200).send({ msg: "Fiche updated" });
     } catch (error) {
@@ -172,9 +172,11 @@ exports.editRendez = async (req, res) => {
         });
     }
 };
+
 exports.addrdv = async (req, res) => {
     try {
-        const { PatientName, date } = req.body;
+        const { PatientName, date, médicament, note, Numero, Message } =
+            req.body;
         const rendezvous = await RendezVous.findOne({ date: date });
         if (rendezvous) {
             res.status(400).send({ msg: "date exist" });

@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { addRdv } from "../../JS/actions/doctor";
-// import moment from "moment";
-const AddRdv = () => {
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+const AddMed = () => {
     const dispatch = useDispatch();
+    
     const [newRendezVous, setNewRendezVous] = useState({
         PatientName: "",
         date: "",
-        // médicament: "",
+        médicament: "",
         note: "",
         Numero: "",
-        Message: "",
+        message: "",
     });
     const handleChange = (e) => {
         setNewRendezVous({ ...newRendezVous, [e.target.name]: e.target.value });
@@ -54,16 +54,16 @@ const AddRdv = () => {
                     placeholder="DD-MM HH h"
                     onChange={handleChange}
                 />
-                <label htmlFor="phone">phone </label>
+                <label htmlFor="médicament">médicament</label>
                 <input
                     style={{ width: "400px", textAlign: "center" }}
-                    type="tel"
-                    name="Numero"
-                    value={newRendezVous.Numero}
-                    placeholder="Enter you phone"
+                    type="text"
+                    name="médicament"
+                    value={newRendezVous.médicament}
+                    placeholder="médicament"
                     onChange={handleChange}
                 />
-                <label htmlFor="note">Motif de consultation</label>
+                     <label htmlFor="note">Motif de consultation</label>
                 <select style={{ textAlign: "center", width: "400px" }}>
                     <option value="">Choisissez un motif</option>
                     <option value="1">Première consultation dentaire</option>
@@ -79,31 +79,31 @@ const AddRdv = () => {
                         onChange={handleChange}
                     />
                 </select>
+                <label htmlFor="phone">phone </label>
+                <input
+                    style={{ width: "400px", textAlign: "center" }}
+                    type="tel"
+                    name="Numero"
+                    value={newRendezVous.Numero}
+                    placeholder="Enter you phone"
+                    onChange={handleChange}
+                />
+             
                 <label htmlFor="Date de Naissance ">Date de Naissance</label>
                 <input
                     style={{ width: "400px", textAlign: "center" }}
                     type="date"
-                    name="Message"
-                    value={newRendezVous.Message}
+                    name="message"
+                    value={newRendezVous.message}
                     placeholder="Date de naissance"
                     onChange={handleChange}
                 />
-                {/* <label htmlFor="note">Note</label>
-                <input
-                    style={{ width: "400px", textAlign: "center" }}
-                    type="text"
-                    name="note"
-                    value={newRendezVous.note}
-                    placeholder="note"
-                    onChange={handleChange}
-                /> */}
                 <br />
-                <Link to="/">
+                <Link to="/rdv">
                     <Button onClick={() => add()}>Envoyer</Button>
                 </Link>
             </div>
         </div>
     );
 };
-
-export default AddRdv;
+export default AddMed;

@@ -18,6 +18,7 @@ import RDV from "./pages/DoctorPages/RDV";
 import Editmodal from "./pages/DoctorPages/Editmodal";
 import PatientsList from "./Components/PatientsList";
 import PrivateRoute from "./Route/PrivateRoute";
+import AddMed from "./pages/DoctorPages/AddMed";
 function App() {
     return (
         <div className="App">
@@ -27,6 +28,8 @@ function App() {
                 <Route path="/about" component={About} />
 
                 {/* rdv */}
+                <Route path="/addmed" component={AddMed} />
+
                 <Route path="/rendezvous" component={RendezVous} />
                 <Route path="/addrdv" component={AddRdv} />
                 {/* <Route

@@ -11,7 +11,7 @@ const initialState = {
     load: false,
     errors: [],
     isAuthdoc: false,
-    RdvList: [],
+    Rendez: [],
 };
 //pure function
 const doctorReducer = (state = initialState, { type, payload }) => {
@@ -38,7 +38,7 @@ const doctorReducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 load: false,
-                RdvList: payload.RdvList,
+                Rendez: payload.Rendez,
             };
         case FAILED:
             return { ...state, load: false, error: payload };

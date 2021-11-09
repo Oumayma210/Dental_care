@@ -24,7 +24,7 @@ const Navigation = () => {
                                 About
                             </Nav.Link>
                         </Link>
-                        <Nav.Link eventKey={2} href="#features">
+                        <Nav.Link eventKey={2} href="#Nos services">
                             Nos services
                         </Nav.Link>
                         <Nav.Link eventKey={2} href="RendezVous">

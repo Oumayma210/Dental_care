@@ -12,7 +12,7 @@ const RdvCard = ({ rdv }) => {
                 <Card.Text>{rdv.date}</Card.Text>
                 <Card.Text>{rdv.Numero}</Card.Text>
                 <Link to={`/editrdvmodal/${rdv._id}`}>
-                    {" "}
+                    {/* <Link to={"/addmed"}> */}{" "}
                     <Button variant="primary">Edit</Button>
                 </Link>{" "}
             </Card.Body>

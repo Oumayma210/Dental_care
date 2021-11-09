@@ -6,7 +6,7 @@ const RendezSchema = new Schema({
     date: { type: String, required: true },
     // isReserved: Boolean,
     médicament: String,
-    note: { type: String, required: true },
+    note: { type: String },
     Numero: String,
     Message: String,
 });

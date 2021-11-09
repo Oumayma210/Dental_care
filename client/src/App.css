@@ -10,15 +10,15 @@ body {
 }
 ul {
     font-size: 15px;
-    font-family: Corbel
-
-    ;
+    font-family: Corbel;
 }
-h2{display: block;
+h2 {
+    display: block;
     color: #4c6880;
     font-size: 13px;
     font-weight: 600;
-    padding-top: 5px;}
+    padding-top: 5px;
+}
 
 /* footer */
 footer {

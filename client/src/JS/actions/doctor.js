@@ -81,7 +81,7 @@ export const addPatient = (newPatient) => async (dispatch) => {
 export const getAllRendezvous = () => async (dispatch) => {
     dispatch({ type: LOAD });
     try {
-        let result = await axios.get("/doctor/allrdv");
+        let result = await axios.get("/doctor/rdvv");
         dispatch({
             type: GET_ALLRENDEZVOUS,
             payload: result.data,
