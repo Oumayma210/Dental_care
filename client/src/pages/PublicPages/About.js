@@ -11,7 +11,8 @@ const About = () => {
                     justifiyContent: "center",
                     display: "flex",
                     flexDirection: " column",
-                    paddingLeft:"280px"
+                    paddingLeft:"280px",
+
                 }}
             >
                 <Card.Body>

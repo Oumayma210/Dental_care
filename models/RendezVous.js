@@ -6,8 +6,8 @@ const RendezSchema = new Schema({
     date: { type: String, required: true },
     // isReserved: Boolean,
     médicament: String,
-    note: String,
-    Numero: Number,
+    note: { type: String, required: true },
+    Numero: String,
     Message: String,
 });
 module.exports = RendezVous = mongoose.model("rendez", RendezSchema);

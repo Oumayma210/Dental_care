@@ -15,7 +15,7 @@ const Editmodal = () => {
         date: "",
         médicament: "",
         note: "",
-        Numero:"",
+        Numero: "",
     });
 
     const handleChange = (e) => {
@@ -38,49 +38,74 @@ const Editmodal = () => {
                     <Modal.Title>PROFILE</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <label htmlFor="name">name</label>
+                    <label htmlFor="PatientName">Patient Name</label>
                     <input
+                        style={{ width: "400px", textAlign: "center" }}
                         type="text"
                         name="PatientName"
                         value={newRendezVous.PatientName}
-                        placeholder="enter your name"
+                        placeholder="enter the patient Name"
                         onChange={handleChange}
                     />
-                    <br />
                     <label htmlFor="date">Date</label>
                     <input
-                        type="date"
+                        style={{
+                            width: "400px",
+                            textAlign: "center",
+                        }}
+                        type="text"
                         name="date"
                         value={newRendezVous.date}
-                        placeholder="enter date"
+                        placeholder="DD-MM HH h"
                         onChange={handleChange}
                     />
-                    <br />
-                    <label htmlFor="médicament">Médicament</label>
+                    <label htmlFor="médicament">médicament</label>
                     <input
+                        style={{ width: "400px", textAlign: "center" }}
                         type="text"
                         name="médicament"
                         value={newRendezVous.médicament}
-                        placeholder="enter médicament"
+                        placeholder="médicament"
                         onChange={handleChange}
                     />
-                    <br />
-                    <label htmlFor="note">note</label>
+                    <label htmlFor="phone">phone </label>
                     <input
-                        type="text"
-                        name="note"
-                        value={newRendezVous.note}
-                        placeholder="enter your name"
-                        onChange={handleChange}
-                    />
-                    <br />
-                    <label htmlFor="Numero">Tél</label>
-
-                    <input
-                        type="number"
+                        style={{ width: "400px", textAlign: "center" }}
+                        type="tel"
                         name="Numero"
-                        value={(newRendezVous.Numero=RdvList.Numero)}
-                        placeholder="enter your name"
+                        value={newRendezVous.Numero}
+                        placeholder="Enter you phone"
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="note">Motif de consultation</label>
+                    <select style={{ textAlign: "center", width: "400px" }}>
+                        <option value="">Choisissez un motif</option>
+                        <option value="1">
+                            Première consultation dentaire
+                        </option>
+                        <option value="2">
+                            Consultation de suivi dentaire
+                        </option>
+                        <option value="3">Détartrage </option>
+                        <option value="4">Urgence dentaire</option>
+                        <input
+                            style={{ width: "400px", textAlign: "center" }}
+                            type="string"
+                            name="note"
+                            value={newRendezVous.note}
+                            placeholder="Choisissez un motif"
+                            onChange={handleChange}
+                        />
+                    </select>
+                    <label htmlFor="Date de Naissance ">
+                        Date de Naissance
+                    </label>
+                    <input
+                        style={{ width: "400px", textAlign: "center" }}
+                        type="date"
+                        name="message"
+                        value={newRendezVous.message}
+                        placeholder="Date de naissance"
                         onChange={handleChange}
                     />
                 </Modal.Body>

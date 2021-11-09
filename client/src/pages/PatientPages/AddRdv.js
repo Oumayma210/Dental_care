@@ -9,7 +9,7 @@ const AddRdv = () => {
     const [newRendezVous, setNewRendezVous] = useState({
         PatientName: "",
         date: "",
-        médicament: "",
+        // médicament: "",
         note: "",
         Numero: "",
         message: "",
@@ -22,7 +22,6 @@ const AddRdv = () => {
     };
     return (
         <div>
-            <h2>Add Rdv page</h2>
             <div
                 style={{
                     display: "flex",
@@ -33,6 +32,7 @@ const AddRdv = () => {
                     paddingLeft: "500px",
                 }}
             >
+                <h2>Add Rdv page</h2>
                 <label htmlFor="PatientName">Patient Name</label>
                 <input
                     style={{ width: "400px", textAlign: "center" }}
@@ -63,15 +63,29 @@ const AddRdv = () => {
                     placeholder="Enter you phone"
                     onChange={handleChange}
                 />
-                <label htmlFor="Date de Naissance et message">
-                    Date de Naissance et message
-                </label>
+                <label htmlFor="note">Motif de consultation</label>
+                <select style={{ textAlign: "center", width: "400px" }}>
+                    <option value="">Choisissez un motif</option>
+                    <option value="1">Première consultation dentaire</option>
+                    <option value="2">Consultation de suivi dentaire</option>
+                    <option value="3">Détartrage </option>
+                    <option value="4">Urgence dentaire</option>
+                    <input
+                        style={{ width: "400px", textAlign: "center" }}
+                        type="string"
+                        name="note"
+                        value={newRendezVous.note}
+                        placeholder="Choisissez un motif"
+                        onChange={handleChange}
+                    />
+                </select>
+                <label htmlFor="Date de Naissance ">Date de Naissance</label>
                 <input
                     style={{ width: "400px", textAlign: "center" }}
-                    type="text"
+                    type="date"
                     name="message"
                     value={newRendezVous.message}
-                    placeholder="Date de naissance et message"
+                    placeholder="Date de naissance"
                     onChange={handleChange}
                 />
                 {/* <label htmlFor="note">Note</label>
@@ -83,6 +97,7 @@ const AddRdv = () => {
                     placeholder="note"
                     onChange={handleChange}
                 /> */}
+                <br />
                 <Link to="/">
                     <Button onClick={() => add()}>Envoyer</Button>
                 </Link>
