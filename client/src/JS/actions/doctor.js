@@ -111,3 +111,11 @@ export const editRDV = (id, newRDV) => async (dispatch) => {
         dispatch({ type: FAILED, payload: error.response });
     }
 };
+export const deleteRDV = (_id) => async (dispatch) => {
+    try {
+        await axios.delete(`/doctor/deleterdv/${_id}`);
+        dispatch(getAllRendezvous());
+    } catch (error) {
+        dispatch({ type: FAILED, payload: error.response });
+    }
+};

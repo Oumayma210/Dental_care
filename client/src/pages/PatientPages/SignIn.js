@@ -10,7 +10,16 @@ const SignIn = ({ history }) => {
         //history:thezni mbaad mayenzl yaamli push lel profile
     };
     return (
-        <div>
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                width: "500px",
+                paddingLeft: "500px",
+            }}
+        >
             <h2>SignIn</h2>
             <label>Email</label>
             <input

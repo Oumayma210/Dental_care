@@ -12,7 +12,14 @@ const Signup = ({ history }) => {
     };
     console.log(newPatient);
     return (
-        <div>
+        <div  style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            width: "500px",
+            paddingLeft: "500px",
+        }}>
             <h2>Signup</h2>
             <label>Name</label>
             <input

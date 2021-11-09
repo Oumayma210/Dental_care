@@ -65,14 +65,14 @@ const AddRdv = () => {
                 />
                 <label htmlFor="note">Motif de consultation</label>
                 <select style={{ textAlign: "center", width: "400px" }}>
-                    <option value="">Choisissez un motif</option>
-                    <option value="1">Première consultation dentaire</option>
-                    <option value="2">Consultation de suivi dentaire</option>
-                    <option value="3">Détartrage </option>
-                    <option value="4">Urgence dentaire</option>
+                    <option value="note">Choisissez un motif</option>
+                    <option value="note">Première consultation dentaire</option>
+                    <option value="note">Consultation de suivi dentaire</option>
+                    <option value="note">Détartrage </option>
+                    <option value="note">Urgence dentaire</option>
                     <input
                         style={{ width: "400px", textAlign: "center" }}
-                        type="string"
+                        type="text"
                         name="note"
                         value={newRendezVous.note}
                         placeholder="Choisissez un motif"

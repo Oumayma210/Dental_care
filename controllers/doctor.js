@@ -197,3 +197,15 @@ exports.addrdv = async (req, res) => {
         });
     }
 };
+exports.deleteRDV = async (req, res) => {
+    try {
+        const { _id } = req.params;
+        await RendezVous.findOneAndDelete({ _id });
+        res.status(200).send({ msg: "RDV deleted" });
+    } catch (error) {
+        res.status(400).send({
+            msg: "cannot delete this RDV",
+            error,
+        });
+    }
+};

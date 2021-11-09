@@ -78,17 +78,19 @@ const Home = () => {
                     </Carousel.Caption> */}
                 </Carousel.Item>
             </Carousel>
-            <section id="Nos services">
+            {/* <section id="Nos services">
                 <div class="icon">
                     <i class="fa">
-                        <img src="http://centredentairedefrance.com/assets/picto/soin.png" />
+                        <img alt="" src="http://centredentairedefrance.com/assets/picto/soin.png" />
                     </i>
+                    <p>zahdazmkfjzrgperkgp^rktg</p>
                 </div>
                 <h2 style={{ color: "gray" }}>
                     Hygiène <br />
                     asepsie
                 </h2>
-            </section>
+                
+            </section> */}
         </div>
     );
 };

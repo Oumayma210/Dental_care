@@ -24,4 +24,5 @@ router.delete("/:_id", doctor.deletePatient);
 router.get("/rdvv", patient.rendezvous);
 router.put("/:_id", doctor.editRendez);
 router.post("/addrdv", doctor.addrdv);
+router.delete("/deleterdv/:_id", doctor.deleteRDV);
 module.exports = router;
