@@ -12,58 +12,67 @@ const Signup = ({ history }) => {
     };
     console.log(newPatient);
     return (
-        <div  style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            flexWrap: "wrap",
-            width: "500px",
-            paddingLeft: "500px",
-        }}>
-            <h2>Signup</h2>
-            <label>Name</label>
-            <input
-                type="text"
-                name="name"
-                placeholder="Enter your Name .."
-                onChange={handleChange}
-            />
-            <label>Email</label>
-            <input
-                type="email"
-                name="email"
-                placeholder="Enter your email .."
-                onChange={handleChange}
-            />
-            <label>Password</label>
-            <input
-                type="password"
-                name="password"
-                placeholder="Enter your password .."
-                onChange={handleChange}
-            />
-            <label>Nickname</label>
-            <input
-                type="text"
-                name="nickname"
-                placeholder="Enter your nickname .."
-                onChange={handleChange}
-            />
-            <label>age</label>
-            <input
-                type="number"
-                name="age"
-                placeholder="Enter your age .."
-                onChange={handleChange}
-            />
-            <label>Phone</label>
-            <input
-                type="number"
-                name="phone"
-                placeholder="Enter your phone .."
-                onChange={handleChange}
-            />
-            <button onClick={() => dispatch(signup(newPatient))}>SignUp</button>
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                width: "500px",
+                paddingLeft: "500px",
+            }}
+        >
+            <div className="Container" id="container">
+                <h2>Signup</h2>
+                <form>
+                    <label>Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your Name .."
+                        onChange={handleChange}
+                    />
+                    <label>Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email .."
+                        onChange={handleChange}
+                    />
+                    <label>Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Enter your password .."
+                        onChange={handleChange}
+                    />
+                    <label>Nickname</label>
+                    <input
+                        type="text"
+                        name="nickname"
+                        placeholder="Enter your nickname .."
+                        onChange={handleChange}
+                    />
+                    <label>age</label>
+                    <input
+                        type="number"
+                        name="age"
+                        placeholder="Enter your age .."
+                        onChange={handleChange}
+                    />
+                    <label>Phone</label>
+                    <input
+                        type="number"
+                        name="phone"
+                        placeholder="Enter your phone .."
+                        onChange={handleChange}
+                    />
+                    <br />
+                    <Button onClick={() => dispatch(signup(newPatient))}>
+                        SignUp
+                    </Button>
+                </form>
+            </div>
             {/* <RendezVousList /> */}
             <div>
                 <p>If you have already account click here!!</p>

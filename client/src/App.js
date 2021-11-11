@@ -58,6 +58,12 @@ function App() {
                 <Route path="/rdv" component={RDV} />
                 <Route path="/*" component={Error} />
             </Switch>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
             <Footer />
         </div>
     );

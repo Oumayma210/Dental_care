@@ -1,15 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 const Doctor = () => {
     return (
-        <div>
-            <Link to="/patientList">
-                <Button> Patient List </Button>
-            </Link>
-            <Link to="/rdv">
-                <Button> List of Rendez-Vous </Button>
-            </Link>
+        <div
+            style={{
+                paddingTop:"40px",
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-evenly",
+            }}
+        >
+            <Card style={{ width: "18rem" }}>
+                <Card.Header>Liste de patients</Card.Header>
+                <Card.Body>
+                    <Card.Img
+                        variant="top"
+                        src="https://th.bing.com/th/id/R.69e7221916b6f9e39ac60bb20922f9d8?rik=aTOPbme6vjMl8g&riu=http%3a%2f%2fclassroomclipart.com%2fimages%2fgallery%2fClipart%2fDental%2fdentist-examination-of-patient.jpg&ehk=VjCxhxziriG0qMeWh2iWBtwBN4nPN%2bZsIntFKSffR44%3d&risl=&pid=ImgRaw&r=0"
+                    />
+                    <br />
+                    <Link to="/patientList">
+                        <br />
+                        <Button variant="primary">Liste de patients</Button>
+                    </Link>
+                </Card.Body>
+            </Card>
+            <br />
+
+            <Card style={{ width: "18rem" }}>
+                <Card.Header>Liste de Rendez-Vous</Card.Header>
+                <Card.Body>
+                    <Card.Img
+                        variant="top"
+                        src="https://thumbs.dreamstime.com/b/rendez-vous-de-calendrier-avec-le-vecteur-d-ic%C3%B4ne-dentiste-106269936.jpg"
+                    />
+
+                    <Link to="/rdv">
+                        <Button variant="primary">Liste de Rendez-Vous </Button>
+                    </Link>
+                </Card.Body>
+            </Card>
         </div>
     );
 };

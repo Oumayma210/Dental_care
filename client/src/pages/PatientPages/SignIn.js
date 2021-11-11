@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signin } from "../../JS/actions/patient";
+import { Button } from "react-bootstrap";
+import Navigation from "../../Components/Navigation";
+import Footer from "./../../Components/Footer";
 
 const SignIn = ({ history }) => {
     const [patient, setpatient] = useState({});
@@ -20,27 +23,32 @@ const SignIn = ({ history }) => {
                 paddingLeft: "500px",
             }}
         >
-            <h2>SignIn</h2>
-            <label>Email</label>
-            <input
-                icon="envelope"
-                type="email"
-                name="email"
-                placeholder="Enter your Email .."
-                onChange={handleChange}
-            />
-            <label>Password</label>
-            <input
-                icon="lock"
-                type="password"
-                name="password"
-                placeholder="Enter your password .."
-                onChange={handleChange}
-            />
-            <button onClick={() => dispatch(signin(patient, history))}>
-                SignIn
-            </button>
-            {/* <RendezVousList /> */}
+            <div className="Container" id="container">
+                <form>
+                    <h2>SignIn</h2>
+                    <label>Email</label>
+                    <input
+                        icon="envelope"
+                        type="email"
+                        name="email"
+                        placeholder="Enter your Email .."
+                        onChange={handleChange}
+                    />
+                    <label>Password</label>
+                    <input
+                        icon="lock"
+                        type="password"
+                        name="password"
+                        placeholder="Enter your password .."
+                        onChange={handleChange}
+                    />
+                    <br />
+                    <Button onClick={() => dispatch(signin(patient, history))}>
+                        SignIn
+                    </Button>
+                    {/* <RendezVousList /> */}
+                </form>
+            </div>
         </div>
     );
 };

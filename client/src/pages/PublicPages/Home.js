@@ -1,8 +1,11 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import Navigation from "../../Components/Navigation";
+import Footer from './../../Components/Footer';
 const Home = () => {
     return (
         <div>
+
             <h2 style={{ color: "steelblue" }}>
                 {" "}
                 Bienvenue au cabinet dentaire des Docteurs Flandrin et Lloh2

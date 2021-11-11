@@ -21,7 +21,7 @@ const Navigation = () => {
                         </Link>
                         <Link to="/about">
                             <Nav.Link eventKey={2} href="About">
-                                About
+                                A propos
                             </Nav.Link>
                         </Link>
                         <Nav.Link eventKey={2} href="#Nos services">
@@ -39,7 +39,7 @@ const Navigation = () => {
                             "
                             >
                                 {" "}
-                                Espace Doctor
+                                Espace médecin{" "}
                             </a>
                         </Nav.Link>
                     </Nav>

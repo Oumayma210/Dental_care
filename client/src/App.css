@@ -20,14 +20,14 @@ h2 {
     padding-top: 5px;
 }
 
-/* footer */
+/* footer
 footer {
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
     margin: 0px;
-    position: absolute;
+    position: relative;
 }
 #part1 {
     width: 100%;
@@ -294,4 +294,69 @@ footer {
     #part1 {
         height: 250px;
     }
+} */
+.text-small {
+    font-size: 0.9rem;
+}
+
+footer {
+    background: black;
+}
+
+/* ==========================================
+      CUSTOM UTILS CLASSES
+    ========================================== */
+body,
+html {
+    height: 100%;
+}
+
+/* input */
+button {
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+form {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+.Container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    margin: 20px;
 }

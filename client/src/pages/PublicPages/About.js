@@ -6,14 +6,7 @@ const About = () => {
         <div>
             <Card
                 className="text-center"
-                style={{
-                    width: "1300px",
-                    justifiyContent: "center",
-                    display: "flex",
-                    flexDirection: " column",
-                    paddingLeft:"280px",
-
-                }}
+               
             >
                 <Card.Body>
                     <Card.Title>

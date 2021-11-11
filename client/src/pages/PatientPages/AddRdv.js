@@ -3,7 +3,9 @@ import { useDispatch } from "react-redux";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { addRdv } from "../../JS/actions/doctor";
+import Navigation from "../../Components/Navigation";
 // import moment from "moment";
+import Footer from "./../../Components/Footer";
 const AddRdv = () => {
     const dispatch = useDispatch();
     const [newRendezVous, setNewRendezVous] = useState({
