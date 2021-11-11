@@ -19,6 +19,8 @@ import Editmodal from "./pages/DoctorPages/Editmodal";
 import PatientsList from "./Components/PatientsList";
 import PrivateRoute from "./Route/PrivateRoute";
 import AddMed from "./pages/DoctorPages/AddMed";
+import NosServices from "./pages/PublicPages/NosServices";
+import ContactezNous from './pages/PublicPages/ContactezNous';
 function App() {
     return (
         <div className="App">
@@ -26,6 +28,8 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
+                <Route exact path="/nosservices" component={NosServices} />
+                <Route exact path="/contact" component={ContactezNous} />
 
                 {/* rdv */}
                 <Route path="/addmed" component={AddMed} />

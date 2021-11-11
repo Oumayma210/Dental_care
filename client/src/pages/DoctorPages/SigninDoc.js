@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signIn } from "../../JS/actions/doctor";
 import { Button } from "react-bootstrap";
-import Navigation from "../../Components/Navigation";
-import Footer from "./../../Components/Footer";
+
 const SigninDoc = ({ history }) => {
     const [doctor, setDoctor] = useState({});
     const dispatch = useDispatch();
@@ -17,8 +16,13 @@ const SigninDoc = ({ history }) => {
                 flexDirection: "column",
                 justifyContent: "center",
                 flexWrap: "wrap",
-                width: "500px",
+                width: "300px",
                 paddingLeft: "500px",
+
+                textAlign: "left",
+                paddingBottom: "250px",
+                paddingTop: "50px",
+                fontSize: "20px",
             }}
         >
             <div className="Container" id="container">
@@ -41,6 +45,7 @@ const SigninDoc = ({ history }) => {
                     <br />
                     <div>
                         <Button
+                            style={{ margin: "10px" }}
                             onClick={() => dispatch(signIn(doctor, history))}
                         >
                             Sign In

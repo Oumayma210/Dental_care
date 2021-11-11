@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { Button } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { editRDV } from "./../../JS/actions/doctor";
 import { Link } from "react-router-dom";
@@ -71,15 +70,18 @@ const Editmodal = ({ match }) => {
                 placeholder="Enter you phone"
                 onChange={handleChange}
             />
-            <label htmlFor="note">Motif de consultation</label>
-            <select style={{ textAlign: "center", width: "400px" }}>
-                <option value="">Choisissez un motif</option>
-                <option value="1">Première consultation dentaire</option>
-                <option value="2">Consultation de suivi dentaire</option>
-                <option value="3">Détartrage </option>
-                <option value="4">Urgence dentaire</option>
+            <label htmlFor="note">Motif de consultation:</label>
+            <select name="note" value={newRDV.note} onChange={handleChange}>
+                <option value="Choisissez un motif">Choisissez un motif</option>
+                <option value="Première consultation dentaire">
+                    Première consultation dentaire
+                </option>
+                <option value="Consultation de suivi dentaire">
+                    Consultation de suivi dentaire
+                </option>
+                <option value="Détartrage">Détartrage </option>
+                <option value="Urgence dentaire">Urgence dentaire</option>
                 <input
-                    style={{ width: "400px", textAlign: "center" }}
                     type="text"
                     name="note"
                     value={newRDV.note}

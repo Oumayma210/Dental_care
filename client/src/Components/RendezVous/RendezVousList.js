@@ -11,7 +11,6 @@ const RendezVousList = ({ history }) => {
     useEffect(() => {
         dispatch(getRendezvous());
     }, [dispatch]);
-    console.log(Rendez);
     return (
         <div
             style={{

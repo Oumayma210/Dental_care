@@ -18,12 +18,16 @@ const Signup = ({ history }) => {
                 flexDirection: "column",
                 justifyContent: "center",
                 flexWrap: "wrap",
-                width: "500px",
+                width: "300px",
                 paddingLeft: "500px",
+                textAlign: "left",
+                paddingBottom: "200px",
+                fontSize: "20px",
+                fontWeight: "900px",
             }}
         >
             <div className="Container" id="container">
-                <h2>Signup</h2>
+                <h2 style={{ textAlign: "center" }}>Signup</h2>
                 <form>
                     <label>Name</label>
                     <input
@@ -68,13 +72,16 @@ const Signup = ({ history }) => {
                         onChange={handleChange}
                     />
                     <br />
-                    <Button onClick={() => dispatch(signup(newPatient))}>
+                    <Button
+                        style={{ margin: "10px" }}
+                        onClick={() => dispatch(signup(newPatient))}
+                    >
                         SignUp
                     </Button>
                 </form>
             </div>
             {/* <RendezVousList /> */}
-            <div>
+            <div style={{ textAlign: "center" }}>
                 <p>If you have already account click here!!</p>
                 <Link to="/signin">
                     <Button>Sign In</Button>

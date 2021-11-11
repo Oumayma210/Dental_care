@@ -1,5 +1,4 @@
 .App {
-    text-align: center;
     font-family: Lucida, cursive;
 }
 
@@ -9,8 +8,7 @@ body {
     padding: 0;
 }
 ul {
-    font-size: 15px;
-    font-family: Corbel;
+    font-size: 18px;
 }
 h2 {
     display: block;
@@ -303,9 +301,7 @@ footer {
     background: black;
 }
 
-/* ==========================================
-      CUSTOM UTILS CLASSES
-    ========================================== */
+/* */
 body,
 html {
     height: 100%;

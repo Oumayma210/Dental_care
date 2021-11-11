@@ -24,9 +24,12 @@ const Navigation = () => {
                                 A propos
                             </Nav.Link>
                         </Link>
-                        <Nav.Link eventKey={2} href="#Nos services">
-                            Nos services
-                        </Nav.Link>
+                        <Link to="/nosservices">
+                            <Nav.Link eventKey={2} href="#Nos services">
+                                Nos services
+                            </Nav.Link>
+                        </Link>
+
                         <Nav.Link eventKey={2} href="RendezVous">
                             <a href="/signup">Rendez-Vous</a>
                         </Nav.Link>
@@ -44,7 +47,7 @@ const Navigation = () => {
                         </Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link eventKey={2} href="ContactezNous">
+                        <Nav.Link eventKey={2} href="\contact">
                             Contactez-Nous
                         </Nav.Link>
                     </Nav>

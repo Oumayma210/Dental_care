@@ -162,7 +162,7 @@ exports.editRendez = async (req, res) => {
         const { _id } = req.params;
         const result = await RendezVous.findOneAndUpdate(
             { _id },
-            { $set: { ...req.body}}
+            { $set: { ...req.body } }
         );
         res.status(200).send({ msg: "Fiche updated" });
     } catch (error) {
@@ -184,6 +184,10 @@ exports.addrdv = async (req, res) => {
         const newRendezVous = new RendezVous({
             PatientName,
             date,
+            médicament,
+            note,
+            Numero,
+            Message,
         });
         await newRendezVous.save();
         res.status(200).send({

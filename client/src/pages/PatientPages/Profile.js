@@ -29,7 +29,7 @@ const Profile = () => {
         setShow(false);
     };
     return (
-        <div>
+        <div style={{ textAlign: "center" }}>
             <h1 style={{ fontStyle: "italic", marginTop: "20px" }}>Profile </h1>
             <div className="container mt-5 mb-5 p-3 d-flex justify-content-center">
                 <div

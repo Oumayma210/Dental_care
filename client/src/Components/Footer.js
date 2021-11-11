@@ -31,7 +31,8 @@ const Footer = () => {
                             France cabinet.offerle@gmail.com 03 88 38 60 47.
                         </p> */}
                         <p className="small text-muted mb-0">
-                            © Copyrights. All rights reserved.{" "}
+                            © 2021. All rights reserved. <br />
+                            Site développé par : Abdelli Oumayma{" "}
                         </p>
                     </div>
                     <div className="col-lg-2 col-md-6">
@@ -46,7 +47,7 @@ const Footer = () => {
                                 <a href="/about">About</a>
                             </ol>
                             <ol>
-                                <a href="#">Nos Services</a>
+                                <a href="/nosservices">Nos Services</a>
                             </ol>
                             <ol>
                                 <a href="/signup">Rendez-vous</a>

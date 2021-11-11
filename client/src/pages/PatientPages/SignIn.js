@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signin } from "../../JS/actions/patient";
 import { Button } from "react-bootstrap";
-import Navigation from "../../Components/Navigation";
-import Footer from "./../../Components/Footer";
+
 
 const SignIn = ({ history }) => {
     const [patient, setpatient] = useState({});
@@ -19,7 +18,7 @@ const SignIn = ({ history }) => {
                 flexDirection: "column",
                 justifyContent: "center",
                 flexWrap: "wrap",
-                width: "500px",
+                width: "300px",
                 paddingLeft: "500px",
             }}
         >
@@ -43,7 +42,10 @@ const SignIn = ({ history }) => {
                         onChange={handleChange}
                     />
                     <br />
-                    <Button onClick={() => dispatch(signin(patient, history))}>
+                    <Button
+                        style={{ textAlign: "center", margin:"20px" }}
+                        onClick={() => dispatch(signin(patient, history))}
+                    >
                         SignIn
                     </Button>
                     {/* <RendezVousList /> */}

@@ -1,15 +1,11 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import Navigation from "../../Components/Navigation";
-import Footer from './../../Components/Footer';
 const Home = () => {
     return (
         <div>
-
-            <h2 style={{ color: "steelblue" }}>
+            <h2 style={{ color: "steelblue", textAlign: "center" }}>
                 {" "}
-                Bienvenue au cabinet dentaire des Docteurs Flandrin et Lloh2
-                set.
+                Bienvenue au cabinet dentaire.
             </h2>
             <p>
                 {" "}
@@ -35,7 +31,7 @@ const Home = () => {
                 de vous proposer des soins de qualité alliant confort tout au
                 long de votre traitement et prise en charge personnalisée
             </p>
-            <Carousel>
+            <Carousel style={{ textAlign: "center" }}>
                 <Carousel.Item>
                     <img
                         className=" w-25 p-3"
@@ -81,19 +77,67 @@ const Home = () => {
                     </Carousel.Caption> */}
                 </Carousel.Item>
             </Carousel>
-            {/* <section id="Nos services">
-                <div class="icon">
-                    <i class="fa">
-                        <img alt="" src="http://centredentairedefrance.com/assets/picto/soin.png" />
-                    </i>
-                    <p>zahdazmkfjzrgperkgp^rktg</p>
-                </div>
-                <h2 style={{ color: "gray" }}>
-                    Hygiène <br />
-                    asepsie
-                </h2>
-                
-            </section> */}
+
+            {/* <img
+                    alt=""
+                    src="https://th.bing.com/th/id/R.b9aa33e8ec9adc4bd967788797dde3d1?rik=YOmJhkryUOBqtA&pid=ImgRaw&r=0"
+                    style={{
+                        width: "300px",
+                        height: "350px",
+                        float: "right",
+                        paddingBottom: "90px",
+                    }}
+                />
+                <h4 style={{ color: "steelblue", fontSize: "30px" }}>
+                    {" "}
+                    Le blanchiment
+                </h4>
+                <p>
+                    Après avoir soigné les caries et les gencives le blanchiment
+                    dentaire est réalisé avec des gouttières que nous fabricons
+                    sur mesure.
+                </p>
+                <p>
+                    Une attention particulière est apportée au choix du produit
+                    de blanchiment et à sa concentration. Le patient effectue
+                    ensuite le traitement chez lui, en portant tous les jours
+                    les goutières remplies de produit de blanchiment.
+                </p>
+                <p>
+                    Le résultat s’obtient en une quinzaine de jours en moyenne
+                    et est à entretenir par des rappels de temps en temps.
+                </p>
+                <h4 style={{ color: "steelblue", fontSize: "30px" }}>
+                    {" "}
+                    Les Dévitalisations
+                </h4>
+                <p>
+                    Les dévitalisations sont des actes longs et compliqués. Nous
+                    essayons toujours d’éviter d’en arriver à ce stade.
+                    Lorsqu’une carie devient trop profonde, il faut dévitaliser
+                    la dent.{" "}
+                </p>
+                <p>
+                    Dans les cas complexes, nous travaillons avec des
+                    spécialistes qui réalisent le traitement sous microscope.
+                    Dépister et soigner sans tarder des caries débutantes permet
+                    d’éviter les douleurs et l’atteinte du nerf.{" "}
+                </p>
+                <p>
+                    Cela diminue également le nombre de rendez-vous et le coût
+                    des traitements.
+                </p>
+
+                <img
+                    alt=""
+                    src="https://www.richeidee.com/wp-content/uploads/2013/03/mutuelle_carie_medium.jpg"
+                    style={{
+                        width: "300px",
+                        height: "350px",
+                        float: "right",
+                        paddingBottom: "90px",
+                    }}
+                /> */}
         </div>
     );
 };
