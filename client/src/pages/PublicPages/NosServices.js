@@ -25,7 +25,7 @@ const NosServices = () => {
             <h1>Card Image with description on :hover</h1>
             <div className="cards">
                 <div
-                    className="card"
+                    className="card1"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -38,6 +38,7 @@ const NosServices = () => {
                     <img
                         src="https://www.richeidee.com/wp-content/uploads/2013/03/mutuelle_carie_medium.jpg"
                         alt
+                        className="img1"
                     />
                     <p className="card-desc">
                         <p>
@@ -60,7 +61,7 @@ const NosServices = () => {
                     </p>
                 </div>
                 <div
-                    className="card"
+                    className="card1"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -73,6 +74,7 @@ const NosServices = () => {
                     <img
                         src="https://th.bing.com/th/id/R.b9aa33e8ec9adc4bd967788797dde3d1?rik=YOmJhkryUOBqtA&pid=ImgRaw&r=0"
                         alt
+                        className="img1"
                     />
                     <p className="card-desc">
                         <p>
@@ -95,7 +97,7 @@ const NosServices = () => {
                     </p>
                 </div>
                 <div
-                    className="card"
+                    className="card1"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -108,6 +110,7 @@ const NosServices = () => {
                     <img
                         src="https://th.bing.com/th/id/R.044ca0e7465249159d33b872386aedde?rik=teco8eXI%2fWS41g&riu=http%3a%2f%2fbssident.ma%2fwp-content%2fuploads%2f2018%2f10%2fextraction-dentaire.jpg&ehk=N3C9yYSZNF3m5Ikb%2fto8SIUhr1HOW3eYAzYUwkPGMLo%3d&risl=&pid=ImgRaw&r=0"
                         alt
+                        className="img1"
                     />
                     <p className="card-desc">
                         Les extractions se font au cabinet sauf en cas de
@@ -121,7 +124,7 @@ const NosServices = () => {
             <h1>Card Image with description on :hover</h1>
             <div className="cards">
                 <div
-                    className="card"
+                    className="card1"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -134,7 +137,8 @@ const NosServices = () => {
                     <img
                         src="https://th.bing.com/th/id/R.c0cfaaf16363b6ccba9552c9e00de34e?rik=XFgmpU4XTWOI4w&riu=http%3a%2f%2fwww.tourismedentairecolombie.com%2fwp-content%2fuploads%2f2019%2f03%2fprothese.jpg&ehk=dMEbLD4NKc84e5bOJA2kchBzA5VM2%2bXcoWDebQIiTRs%3d&risl=&pid=ImgRaw&r=0"
                         alt
-                        style={{height:"200px"}}
+                        style={{ height: "200px" }}
+                        className="img1"
                     />
                     <p className="card-desc">
                         Les prothèses dentaires fixes et amovibles sont
@@ -143,7 +147,7 @@ const NosServices = () => {
                     </p>
                 </div>
                 <div
-                    className="card"
+                    className="card1"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -156,8 +160,8 @@ const NosServices = () => {
                     <img
                         src="https://th.bing.com/th/id/R.3861a8a869b5e222fbc59bd7e32c687f?rik=v786zXhgN7R6Ow&pid=ImgRaw&r=0"
                         alt
-                        style={{height:"200px"}}
-
+                        style={{ height: "200px" }}
+                        className="img1"
                     />
                     <p className="card-desc">
                         Le remplacement des dents asbentes par des implants est
@@ -166,7 +170,7 @@ const NosServices = () => {
                     </p>
                 </div>
                 <div
-                    className="card"
+                    className="card1"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -179,8 +183,8 @@ const NosServices = () => {
                     <img
                         src="https://th.bing.com/th/id/OIP.p_rf7nFnWHszYe2Yrg7pTgHaFj?pid=ImgDet&rs=1"
                         alt
-                        style={{height:"200px"}}
-
+                        style={{ height: "200px" }}
+                        className="img1"
                     />
                     <p className="card-desc">
                         Le soin des gencives commence par une hygiène

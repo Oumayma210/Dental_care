@@ -19,6 +19,15 @@ const RendezVousList = ({ history }) => {
                 justifyContent: "space-around",
             }}
         >
+            <h6
+                style={{
+                    color: "black",
+                    textAlign: "center",
+                    fontSize: "25px",
+                }}
+            >
+                Liste de Rendez-vous: {Rendez.length}
+            </h6>
             {load ? (
                 <h2>spinner</h2>
             ) : (

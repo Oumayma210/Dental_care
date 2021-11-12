@@ -21,6 +21,9 @@ const PatientsList = () => {
                 justifyContent: "space-around",
             }}
         >
+            <h6 style={{ color: "black", textAlign:"center" , fontSize:"25px"}}>
+                Liste de patients: {patient.length}
+            </h6>
             {load ? (
                 <Spinner animation="border" />
             ) : (
