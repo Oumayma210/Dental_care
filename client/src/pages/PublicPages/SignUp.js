@@ -72,12 +72,14 @@ const Signup = ({ history }) => {
                         onChange={handleChange}
                     />
                     <br />
-                    <Button
-                        style={{ margin: "10px" }}
-                        onClick={() => dispatch(signup(newPatient))}
-                    >
-                        SignUp
-                    </Button>
+                    <Link to="/profile">
+                        <Button
+                            style={{ margin: "10px" }}
+                            onClick={() => dispatch(signup(newPatient))}
+                        >
+                            SignUp
+                        </Button>
+                    </Link>
                 </form>
             </div>
             {/* <RendezVousList /> */}

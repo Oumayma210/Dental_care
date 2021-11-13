@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 
 const NosServices = () => {
     return (
@@ -25,7 +24,7 @@ const NosServices = () => {
             <h1>Card Image with description on :hover</h1>
             <div className="cards">
                 <div
-                    className="card1"
+                    className="card"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -37,7 +36,7 @@ const NosServices = () => {
                     <h2 className="card-title">Les Dévitalisations</h2>
                     <img
                         src="https://www.richeidee.com/wp-content/uploads/2013/03/mutuelle_carie_medium.jpg"
-                        alt
+                        alt=""
                         className="img1"
                     />
                     <p className="card-desc">
@@ -61,7 +60,7 @@ const NosServices = () => {
                     </p>
                 </div>
                 <div
-                    className="card1"
+                    className="card"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -73,7 +72,7 @@ const NosServices = () => {
                     <h2 className="card-title">Le Blanchiment</h2>
                     <img
                         src="https://th.bing.com/th/id/R.b9aa33e8ec9adc4bd967788797dde3d1?rik=YOmJhkryUOBqtA&pid=ImgRaw&r=0"
-                        alt
+                        alt=""
                         className="img1"
                     />
                     <p className="card-desc">
@@ -97,7 +96,7 @@ const NosServices = () => {
                     </p>
                 </div>
                 <div
-                    className="card1"
+                    className="card"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -109,7 +108,7 @@ const NosServices = () => {
                     <h2 className="card-title">Les Extractions</h2>
                     <img
                         src="https://th.bing.com/th/id/R.044ca0e7465249159d33b872386aedde?rik=teco8eXI%2fWS41g&riu=http%3a%2f%2fbssident.ma%2fwp-content%2fuploads%2f2018%2f10%2fextraction-dentaire.jpg&ehk=N3C9yYSZNF3m5Ikb%2fto8SIUhr1HOW3eYAzYUwkPGMLo%3d&risl=&pid=ImgRaw&r=0"
-                        alt
+                        alt=""
                         className="img1"
                     />
                     <p className="card-desc">
@@ -124,7 +123,7 @@ const NosServices = () => {
             <h1>Card Image with description on :hover</h1>
             <div className="cards">
                 <div
-                    className="card1"
+                    className="card"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -136,8 +135,8 @@ const NosServices = () => {
                     <h2 className="card-title">LES PROTHÈSES DENTAIRES </h2>
                     <img
                         src="https://th.bing.com/th/id/R.c0cfaaf16363b6ccba9552c9e00de34e?rik=XFgmpU4XTWOI4w&riu=http%3a%2f%2fwww.tourismedentairecolombie.com%2fwp-content%2fuploads%2f2019%2f03%2fprothese.jpg&ehk=dMEbLD4NKc84e5bOJA2kchBzA5VM2%2bXcoWDebQIiTRs%3d&risl=&pid=ImgRaw&r=0"
-                        alt
-                        style={{ height: "200px" }}
+                        alt=""
+                        style={{ height: "250px" }}
                         className="img1"
                     />
                     <p className="card-desc">
@@ -147,7 +146,7 @@ const NosServices = () => {
                     </p>
                 </div>
                 <div
-                    className="card1"
+                    className="card"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -159,8 +158,8 @@ const NosServices = () => {
                     <h2 className="card-title">LES IMPLANTS</h2>
                     <img
                         src="https://th.bing.com/th/id/R.3861a8a869b5e222fbc59bd7e32c687f?rik=v786zXhgN7R6Ow&pid=ImgRaw&r=0"
-                        alt
-                        style={{ height: "200px" }}
+                        alt=""
+                        style={{ height: "250px" }}
                         className="img1"
                     />
                     <p className="card-desc">
@@ -170,7 +169,7 @@ const NosServices = () => {
                     </p>
                 </div>
                 <div
-                    className="card1"
+                    className="card"
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -182,8 +181,8 @@ const NosServices = () => {
                     <h2 className="card-title">LE SOIN DES GENCIVES</h2>
                     <img
                         src="https://th.bing.com/th/id/OIP.p_rf7nFnWHszYe2Yrg7pTgHaFj?pid=ImgDet&rs=1"
-                        alt
-                        style={{ height: "200px" }}
+                        alt=""
+                        style={{ height: "250px" }}
                         className="img1"
                     />
                     <p className="card-desc">

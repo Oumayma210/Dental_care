@@ -2,26 +2,26 @@ import React from "react";
 
 const ContactezNous = () => {
     return (
-        <div
-            style={{
-                textAlign: "left",
-                paddingBottom: "250px",
-                paddingTop: "50px",
-                fontSize: "20px",
-                fontWeight: "900px",
-                paddingLeft: "70px",
-            }}
-        >
+        <div>
             <h4
                 style={{
                     textAlign: "center",
                     fontSize: "30px",
                     color: "steelblue",
+                    paddingTop: "50px",
                 }}
             >
                 Contact
             </h4>
-            <div>
+            <div
+                style={{
+                    textAlign: "left",
+                    paddingBottom: "50px",
+                    fontSize: "20px",
+                    fontWeight: "900px",
+                    paddingLeft: "70px",
+                }}
+            >
                 <ul>
                     <li>
                         {" "}
@@ -45,6 +45,17 @@ const ContactezNous = () => {
                     </li>
                 </ul>
             </div>{" "}
+            <div style={{ textAlign: "center" }}>
+                {" "}
+                <img
+                    alt=""
+                    src="./123.png"
+                    style={{
+                        width: "50rem",
+                        height: "20rem",
+                    }}
+                />
+            </div>
         </div>
     );
 };

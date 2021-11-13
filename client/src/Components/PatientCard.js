@@ -5,15 +5,17 @@ import { useDispatch } from "react-redux";
 const PatientCard = ({ patient }) => {
     const dispatch = useDispatch();
     return (
-        <div  style={{  paddingTop: "60px" }}>
-            <Card style={{ width: "18rem"}}>
+        <div style={{ paddingTop: "40px"}}>
+            <Card style={{ width: "16rem" }}>
                 <Card.Body>
                     <Card.Title>Nom:{patient.name}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">
                         {patient.email}
                     </Card.Subtitle>
+                    <Card.Text>Surnom:{patient.nickname}</Card.Text>
                     <Card.Text>Age:{patient.age}</Card.Text>
                     <Card.Text>Tél:{patient.phone}</Card.Text>
+
                     <Button
                         onClick={() => dispatch(deletePatient(patient._id))}
                     >

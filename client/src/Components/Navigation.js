@@ -8,7 +8,13 @@ const Navigation = () => {
     // const isAuth = useSelector((state) => state.patientReducer.isAuth);
     // const dispatch = useDispatch();
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar
+            collapseOnSelect
+            expand="lg"
+            bg="dark"
+            variant="dark"
+            style={{ height: "70px" }}
+        >
             <Container>
                 <Navbar.Brand href="/">Cabinet Dentaire</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,12 +27,12 @@ const Navigation = () => {
                         </Link>
                         <Link to="/about">
                             <Nav.Link eventKey={2} href="About">
-                                A propos
+                                <a href="/about">A propos</a>
                             </Nav.Link>
                         </Link>
                         <Link to="/nosservices">
                             <Nav.Link eventKey={2} href="#Nos services">
-                                Nos services
+                                <a href="/noservices"> Nos services </a>
                             </Nav.Link>
                         </Link>
 
