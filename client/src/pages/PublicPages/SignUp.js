@@ -27,44 +27,44 @@ const Signup = ({ history }) => {
             }}
         >
             <div className="Container" id="container">
-                <h2 style={{ textAlign: "center" }}>Signup</h2>
+                <h2 style={{ textAlign: "center" }}>Créer votre compte</h2>
                 <form>
-                    <label>Name</label>
+                    <label>Nom:</label>
                     <input
                         type="text"
                         name="name"
                         placeholder="Enter your Name .."
                         onChange={handleChange}
                     />
-                    <label>Email</label>
+                    <label>Email:</label>
                     <input
                         type="email"
                         name="email"
                         placeholder="Enter your email .."
                         onChange={handleChange}
                     />
-                    <label>Password</label>
+                    <label>Mot de passe:</label>
                     <input
                         type="password"
                         name="password"
                         placeholder="Enter your password .."
                         onChange={handleChange}
                     />
-                    <label>Nickname</label>
+                    <label>Surnom:</label>
                     <input
                         type="text"
                         name="nickname"
                         placeholder="Enter your nickname .."
                         onChange={handleChange}
                     />
-                    <label>age</label>
+                    <label>age:</label>
                     <input
                         type="number"
                         name="age"
                         placeholder="Enter your age .."
                         onChange={handleChange}
                     />
-                    <label>Phone</label>
+                    <label>Tél:</label>
                     <input
                         type="number"
                         name="phone"
@@ -77,7 +77,7 @@ const Signup = ({ history }) => {
                             style={{ margin: "10px" }}
                             onClick={() => dispatch(signup(newPatient))}
                         >
-                            SignUp
+                            S'inscrire
                         </Button>
                     </Link>
                 </form>
@@ -86,7 +86,7 @@ const Signup = ({ history }) => {
             <div style={{ textAlign: "center" }}>
                 <p>If you have already account click here!!</p>
                 <Link to="/signin">
-                    <Button>Sign In</Button>
+                    <Button>S'identifier</Button>
                 </Link>
             </div>
         </div>

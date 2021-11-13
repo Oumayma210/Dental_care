@@ -4,7 +4,7 @@ import { ListGroup } from "react-bootstrap";
 const About = () => {
     return (
         <div style={{ textAlign: "center" }}>
-            <h2>Doctor Aziz</h2>
+            <h2>Dr Aziz</h2>
             <img
                 style={{ width: "200px", textAlign: "center" }}
                 src="https://th.bing.com/th/id/R.23439048e360353214daf8bbfe61b484?rik=rSMXwMFLQ4PU7g&pid=ImgRaw&r=0"

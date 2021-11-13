@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 const ContactezNous = () => {
     return (
@@ -45,17 +46,21 @@ const ContactezNous = () => {
                     </li>
                 </ul>
             </div>{" "}
-            <div style={{ textAlign: "center" }}>
-                {" "}
-                <img
-                    alt=""
-                    src="./123.png"
-                    style={{
-                        width: "50rem",
-                        height: "20rem",
-                    }}
-                />
-            </div>
+            <Container>
+                <Row className="justify-content-md-center">
+                    <Col md="auto">
+                        {" "}
+                        <img
+                            alt=""
+                            src="./123.png"
+                            style={{
+                                width: "600px",
+                                boxShadow: " 20px 0 20px 0",
+                            }}
+                        />
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 };

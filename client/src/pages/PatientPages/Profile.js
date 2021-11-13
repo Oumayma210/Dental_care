@@ -30,7 +30,15 @@ const Profile = () => {
     };
     return (
         <div style={{ textAlign: "center" }}>
-            <h1 style={{ fontStyle: "italic", marginTop: "20px" }}>Profile </h1>
+            <h1
+                style={{
+                    fontStyle: "italic",
+                    marginTop: "20px",
+                    color: "black",
+                }}
+            >
+                Profile :{patient.name}{" "}
+            </h1>
             <div className="container mt-5 mb-5 p-3 d-flex justify-content-center">
                 <div
                     className="card p-2"
@@ -75,10 +83,15 @@ const Profile = () => {
                                 keyboard={false}
                             >
                                 <Modal.Header closeButton>
-                                    <Modal.Title>PROFILE</Modal.Title>
+                                    <Modal.Title>
+                                        <h4 style={{ color: "black" }}>
+                                            {" "}
+                                            Profile
+                                        </h4>
+                                    </Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body>
-                                    <label htmlFor="name">name</label>
+                                    <label htmlFor="name">Nom</label>
                                     <input
                                         style={{
                                             width: "400px",
@@ -86,7 +99,7 @@ const Profile = () => {
                                         }}
                                         type="text"
                                         name="name"
-                                        value={newPatient.name}
+                                        value={(newPatient.name = patient.name)}
                                         placeholder="enter your name"
                                         onChange={handleChange}
                                     />
@@ -99,7 +112,9 @@ const Profile = () => {
                                         }}
                                         type="email"
                                         name="email"
-                                        value={newPatient.email}
+                                        value={
+                                            (newPatient.email = patient.email)
+                                        }
                                         placeholder="enter your email"
                                         onChange={handleChange}
                                     />
@@ -125,7 +140,10 @@ const Profile = () => {
                                         }}
                                         type="text"
                                         name="nickname"
-                                        value={newPatient.nickname}
+                                        value={
+                                            (newPatient.nickname =
+                                                patient.nickname)
+                                        }
                                         placeholder="enter your name"
                                         onChange={handleChange}
                                     />
@@ -139,7 +157,7 @@ const Profile = () => {
                                         }}
                                         type="age"
                                         name="age"
-                                        value={newPatient.age}
+                                        value={(newPatient.age = patient.age)}
                                         placeholder="enter your age"
                                         onChange={handleChange}
                                     />
@@ -152,7 +170,9 @@ const Profile = () => {
                                         }}
                                         type="tel"
                                         name="phone"
-                                        value={newPatient.phone}
+                                        value={
+                                            (newPatient.phone = patient.phone)
+                                        }
                                         placeholder="enter your phone number"
                                         onChange={handleChange}
                                     />

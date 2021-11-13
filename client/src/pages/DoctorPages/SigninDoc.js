@@ -27,7 +27,7 @@ const SigninDoc = ({ history }) => {
         >
             <div className="Container" id="container">
                 <form>
-                    <h2>Sign In</h2>
+                    <h2>Hello Dr</h2>
                     <label>Email</label>
                     <input
                         type="email"
@@ -48,7 +48,7 @@ const SigninDoc = ({ history }) => {
                             style={{ margin: "10px" }}
                             onClick={() => dispatch(signIn(doctor, history))}
                         >
-                            Sign In
+                            S'identifier{" "}
                         </Button>
                     </div>
                 </form>

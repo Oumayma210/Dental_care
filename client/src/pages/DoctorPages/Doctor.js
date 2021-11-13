@@ -5,7 +5,7 @@ const Doctor = () => {
     return (
         <div
             style={{
-                paddingTop:"40px",
+                paddingTop: "40px",
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "space-evenly",
@@ -37,6 +37,19 @@ const Doctor = () => {
 
                     <Link to="/rdv">
                         <Button variant="primary">Liste de Rendez-Vous </Button>
+                    </Link>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: "18rem" }}>
+                <Card.Header>Ajouter un patient</Card.Header>
+                <Card.Body>
+                    <Card.Img
+                        variant="top"
+                        src="https://th.bing.com/th/id/R.f65bb2fc67ef774ecc209187a796d392?rik=QOnLZWb5ybkxOw&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fncX%2f6zb%2fncX6zbGRi.jpg&ehk=sggWwIyDTQqDWVz%2bDMhKvoNGC5tH%2bk7%2bubOHapNV0GM%3d&risl=&pid=ImgRaw&r=0"
+                    />
+
+                    <Link to="/signup">
+                        <Button variant="primary">Ajouter un patient</Button>
                     </Link>
                 </Card.Body>
             </Card>

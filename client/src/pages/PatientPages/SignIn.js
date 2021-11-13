@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { signin } from "../../JS/actions/patient";
 import { Button } from "react-bootstrap";
 
-
 const SignIn = ({ history }) => {
     const [patient, setpatient] = useState({});
     const dispatch = useDispatch();
@@ -24,8 +23,8 @@ const SignIn = ({ history }) => {
         >
             <div className="Container" id="container">
                 <form>
-                    <h2>SignIn</h2>
-                    <label>Email</label>
+                    <h2>S'identifier</h2>
+                    <label>Email:</label>
                     <input
                         icon="envelope"
                         type="email"
@@ -33,7 +32,7 @@ const SignIn = ({ history }) => {
                         placeholder="Enter your Email .."
                         onChange={handleChange}
                     />
-                    <label>Password</label>
+                    <label>Mot de passe:</label>
                     <input
                         icon="lock"
                         type="password"
@@ -43,10 +42,10 @@ const SignIn = ({ history }) => {
                     />
                     <br />
                     <Button
-                        style={{ textAlign: "center", margin:"20px" }}
+                        style={{ textAlign: "center", margin: "20px" }}
                         onClick={() => dispatch(signin(patient, history))}
                     >
-                        SignIn
+                        S'identifier
                     </Button>
                     {/* <RendezVousList /> */}
                 </form>
