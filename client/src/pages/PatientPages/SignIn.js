@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { signin } from "../../JS/actions/patient";
 import { Button } from "react-bootstrap";
 
 const SignIn = ({ history }) => {
     const [patient, setpatient] = useState({});
     const dispatch = useDispatch();
+    // const Patient = useSelector((state) => state.patientReducer.patient);
     const handleChange = (e) => {
         setpatient({ ...patient, [e.target.name]: e.target.value });
         //history:thezni mbaad mayenzl yaamli push lel profile
@@ -47,8 +48,11 @@ const SignIn = ({ history }) => {
                     >
                         S'identifier
                     </Button>
-                    {/* <RendezVousList /> */}
                 </form>
+                {/* {Patient.name === patient.name ||
+                    Patient.password === patient.password
+                        ? alert("Hi!")
+                        : alert("try again!")} */}
             </div>
         </div>
     );

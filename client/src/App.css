@@ -368,7 +368,7 @@ input {
     position: relative;
     max-width: 250px;
     max-height: 350px;
-    box-shadow: 0 40px 60px -6px black;
+    box-shadow: 0 20px 20px -6px black;
 }
 
 .card-title {
