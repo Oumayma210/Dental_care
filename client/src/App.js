@@ -23,7 +23,7 @@ import NosServices from "./pages/PublicPages/NosServices";
 import ContactezNous from "./pages/PublicPages/ContactezNous";
 function App() {
     return (
-        <div className="App">
+        <div className="App" style={{ backgroundImage: "./backg.png " }}>
             <Navigation />
             <Switch>
                 <Route exact path="/" component={Home} />
