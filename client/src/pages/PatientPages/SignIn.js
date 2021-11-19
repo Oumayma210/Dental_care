@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { signin } from "../../JS/actions/patient";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SignIn = ({ history }) => {
     const [patient, setpatient] = useState({});
@@ -42,12 +43,14 @@ const SignIn = ({ history }) => {
                         onChange={handleChange}
                     />
                     <br />
-                    <Button
-                        style={{ textAlign: "center", margin: "20px" }}
-                        onClick={() => dispatch(signin(patient, history))}
-                    >
-                        S'identifier
-                    </Button>
+                    <Link to="/profile">
+                        <Button
+                            style={{ textAlign: "center", margin: "20px" }}
+                            onClick={() => dispatch(signin(patient, history))}
+                        >
+                            S'identifier
+                        </Button>
+                    </Link>
                 </form>
                 {/* {Patient.name === patient.name ||
                     Patient.password === patient.password

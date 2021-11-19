@@ -43,6 +43,22 @@ export const GetAllPatient = () => async (dispatch) => {
         });
     }
 };
+//Get_all_rdv
+export const getAllRendezvous = () => async (dispatch) => {
+    dispatch({ type: LOAD });
+    try {
+        let result = await axios.get("/doctor/lrdv");
+        dispatch({
+            type: GET_ALLRENDEZVOUS,
+            payload: result.data,
+        });
+    } catch (error) {
+        dispatch({
+            type: FAILED,
+            payload: error,
+        });
+    }
+};
 //get patient
 export const getPatient = (id) => async (dispatch) => {
     try {
@@ -77,22 +93,7 @@ export const addPatient = (newPatient) => async (dispatch) => {
     }
 };
 ///////////////////////CRUD_RDV//////////////////////////
-//Get_all_rdv
-export const getAllRendezvous = () => async (dispatch) => {
-    dispatch({ type: LOAD });
-    try {
-        let result = await axios.get("/doctor/rdvv");
-        dispatch({
-            type: GET_ALLRENDEZVOUS,
-            payload: result.data,
-        });
-    } catch (error) {
-        dispatch({
-            type: FAILED,
-            payload: error,
-        });
-    }
-};
+
 //addRDV
 export const addRdv = (newRDV) => async (dispatch) => {
     try {

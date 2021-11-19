@@ -49,7 +49,10 @@ const RendezVousList = ({ history }) => {
                 >
                     {" "}
                     {/* <i class="fa fa-backward" aria-hidden="true"></i> */}
-                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                    <i
+                        className="fa fa-angle-double-left"
+                        aria-hidden="true"
+                    ></i>
                 </Button>
             </Link>{" "}
         </div>
