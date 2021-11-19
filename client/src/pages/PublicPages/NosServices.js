@@ -15,13 +15,12 @@ const NosServices = () => {
                 style={{
                     textAlign: "center",
                     fontSize: "35px",
-                    color: "steelblue",
+                    color: "black",
                 }}
             >
                 Nos Services{" "}
             </h4>
 
-            <h1>Card Image with description on :hover</h1>
             <div className="cards">
                 <div
                     className="card"
@@ -120,7 +119,6 @@ const NosServices = () => {
                     </p>
                 </div>
             </div>
-            <h1>Card Image with description on :hover</h1>
             <div className="cards">
                 <div
                     className="card"

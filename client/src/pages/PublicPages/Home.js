@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 const Home = () => {
     return (
         <div>
-            <h2 style={{ color: "steelblue", textAlign: "center" }}>
+            <h2 style={{ color: "#012a4a" }}>
                 {" "}
                 Bienvenue au cabinet dentaire.
             </h2>
@@ -34,7 +34,7 @@ const Home = () => {
             <Carousel style={{ textAlign: "center" }}>
                 <Carousel.Item>
                     <img
-                        className=" w-25 p-3"
+                        className=" w-40 p-3"
                         src="https://th.bing.com/th/id/OIP.2y9k6bgdSj8foOF7CPEKuQHaE8?pid=ImgDet&rs=1"
                         alt="First slide"
                     />
@@ -48,7 +48,7 @@ const Home = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="w-25 p-3"
+                        className="w-35 p-3"
                         src="https://media.sciencephoto.com/image/f0244175/800wm/F0244175-Prosthetic_dentistry_technician_at_work.jpg"
                         alt="Second slide"
                     />
@@ -63,7 +63,7 @@ const Home = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="w-25 p-3"
+                        className="w-40 p-3"
                         src="https://th.bing.com/th/id/OIP.VwVLHR4_Z9M4ejwwyg3GyQAAAA?pid=ImgDet&w=470&h=320&rs=1"
                         alt="Third slide"
                     />

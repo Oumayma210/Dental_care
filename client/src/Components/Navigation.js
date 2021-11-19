@@ -8,36 +8,44 @@ const Navigation = () => {
     // const isAuth = useSelector((state) => state.patientReducer.isAuth);
     // const dispatch = useDispatch();
     return (
-        <Navbar
-            collapseOnSelect
-            expand="lg"
-            bg="dark"
-            variant="dark"
-            style={{ height: "70px" }}
-        >
+        <Navbar collapseOnSelect style={{ height: "70px" }}>
             <Container>
-                <Navbar.Brand href="/">Cabinet Dentaire</Navbar.Brand>
+                <Navbar.Brand href="/" style={{ color: "#012a4a" }}>
+                    Cabinet Dentaire
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Link to="/">
                             <Nav.Link eventKey={2} href="#features">
-                                <a href="/">Accueil</a>
+                                <a href="/" style={{ color: "#012a4a" }}>
+                                    Accueil
+                                </a>
                             </Nav.Link>
                         </Link>
                         <Link to="/about">
                             <Nav.Link eventKey={2} href="About">
-                                <a href="/about">A propos</a>
+                                <a href="/about" style={{ color: "#012a4a" }}>
+                                    A propos
+                                </a>
                             </Nav.Link>
                         </Link>
                         <Link to="/nosservices">
                             <Nav.Link eventKey={2} href="#Nos services">
-                                <a href="/noservices"> Nos services </a>
+                                <a
+                                    href="/noservices"
+                                    style={{ color: "#012a4a" }}
+                                >
+                                    {" "}
+                                    Nos services{" "}
+                                </a>
                             </Nav.Link>
                         </Link>
 
                         <Nav.Link eventKey={2} href="RendezVous">
-                            <a href="/signup">Rendez-Vous</a>
+                            <a href="/signup" style={{ color: "#012a4a" }}>
+                                Rendez-Vous
+                            </a>
                         </Nav.Link>
                     </Nav>
 
@@ -46,6 +54,7 @@ const Navigation = () => {
                             <a
                                 href="/doctor/signin
                             "
+                                style={{ color: "#012a4a" }}
                             >
                                 {" "}
                                 Espace médecin{" "}
@@ -53,7 +62,11 @@ const Navigation = () => {
                         </Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link eventKey={2} href="\contact">
+                        <Nav.Link
+                            eventKey={2}
+                            href="\contact"
+                            style={{ color: "#012a4a" }}
+                        >
                             Contactez-Nous
                         </Nav.Link>
                     </Nav>

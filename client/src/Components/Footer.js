@@ -11,8 +11,8 @@ const Footer = () => {
             <div className="container py-1">
                 <div className="row gy-2 gx-1">
                     <div className="col-lg-10 col-md-1">
-                        <h5 className="h4 text-black">Contact</h5>
-                        <p className="small text-muted">
+                        <h5 style={{color:"#012a4a"}}>Contact</h5>
+                        <p style={{color:"#012a4a"}}>
                             <address>
                                 <span>Adresse:</span>
                                 Parvis Sainte-Alix 45A, 1150
@@ -30,7 +30,7 @@ const Footer = () => {
                         {/* 66B Rue du Marechal Foch Hauptstross, 67190 Mutzig,
                             France cabinet.offerle@gmail.com 03 88 38 60 47.
                         </p> */}
-                        <p className="small text-muted mb-0">
+                        <p style={{color:"#012a4a"}}>
                             © 2021. All rights reserved. <br />
                             Site développé par : Abdelli Oumayma{" "}
                         </p>

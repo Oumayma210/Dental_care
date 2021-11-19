@@ -20,7 +20,7 @@ import PatientsList from "./Components/PatientsList";
 import PrivateRoute from "./Route/PrivateRoute";
 import AddMed from "./pages/DoctorPages/AddMed";
 import NosServices from "./pages/PublicPages/NosServices";
-import ContactezNous from './pages/PublicPages/ContactezNous';
+import ContactezNous from "./pages/PublicPages/ContactezNous";
 function App() {
     return (
         <div className="App">

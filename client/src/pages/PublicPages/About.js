@@ -17,7 +17,7 @@ const About = () => {
                     VENDREDI: 9 - 16
                 </ol>
             </ul>
-            <ListGroup>
+            <ListGroup >
                 <ListGroup.Item>
                     {" "}
                     2001-2007 : LICENCIÉ EN DENTISTERIE DE L’UNIVERSITÉ IULIU
