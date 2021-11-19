@@ -13,7 +13,7 @@ export const signIn = (doctor, history) => async (dispatch) => {
     try {
         let result = await axios.post("/doctor/signin", doctor);
         dispatch({ type: SIGNIN_DOCTOR, payload: result.data });
-        history.push("/doctorroute");
+        // history.push("/doctorroute");
     } catch (error) {
         dispatch({ type: FAILED, payload: error.response.data.errors });
     }
@@ -26,7 +26,6 @@ export const signIn = (doctor, history) => async (dispatch) => {
 //         dispatch({ type: FAILED, payload: error.response });
 //     }
 // };
-///////////////////////CRUD_PATIENT//////////////////////////
 //get all patients
 export const GetAllPatient = () => async (dispatch) => {
     dispatch({ type: LOAD });
@@ -59,6 +58,25 @@ export const getAllRendezvous = () => async (dispatch) => {
         });
     }
 };
+//add patient
+export const addPatient = (newPatient) => async (dispatch) => {
+    try {
+        await axios.post("/doctor/add", newPatient);
+        dispatch(GetAllPatient());
+    } catch (error) {
+        dispatch({ type: FAILED, payload: error.response });
+    }
+};
+
+//addRDV
+export const addRdv = (newRDV) => async (dispatch) => {
+    try {
+        await axios.post("/doctor/addrdv", newRDV);
+        dispatch(getAllRendezvous());
+    } catch (error) {
+        dispatch({ type: FAILED, payload: error.response });
+    }
+};
 //get patient
 export const getPatient = (id) => async (dispatch) => {
     try {
@@ -83,26 +101,7 @@ export const deletePatient = (_id) => async (dispatch) => {
         dispatch({ type: FAILED, payload: error.response });
     }
 };
-//add patient
-export const addPatient = (newPatient) => async (dispatch) => {
-    try {
-        await axios.post("/doctor/add", newPatient);
-        dispatch(GetAllPatient());
-    } catch (error) {
-        dispatch({ type: FAILED, payload: error.response });
-    }
-};
-///////////////////////CRUD_RDV//////////////////////////
 
-//addRDV
-export const addRdv = (newRDV) => async (dispatch) => {
-    try {
-        await axios.post("/doctor/addrdv", newRDV);
-        dispatch(getAllRendezvous());
-    } catch (error) {
-        dispatch({ type: FAILED, payload: error.response });
-    }
-};
 //editRDV
 export const editRDV = (id, newRDV) => async (dispatch) => {
     try {

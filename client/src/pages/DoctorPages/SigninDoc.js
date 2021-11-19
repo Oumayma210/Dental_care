@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signIn } from "../../JS/actions/doctor";
 import { Button } from "react-bootstrap";
-
+import { Link } from 'react-router-dom';
 const SigninDoc = ({ history }) => {
     const [doctor, setDoctor] = useState({});
     const dispatch = useDispatch();
@@ -44,12 +44,16 @@ const SigninDoc = ({ history }) => {
                     />
                     <br />
                     <div>
-                        <Button
-                            style={{ margin: "10px" }}
-                            onClick={() => dispatch(signIn(doctor, history))}
-                        >
-                            S'identifier{" "}
-                        </Button>
+                        <Link to="/doctorroute">
+                            <Button
+                                style={{ margin: "10px" }}
+                                onClick={() =>
+                                    dispatch(signIn(doctor, history))
+                                }
+                            >
+                                S'identifier{" "}
+                            </Button>
+                        </Link>
                     </div>
                 </form>
             </div>
