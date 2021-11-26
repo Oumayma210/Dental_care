@@ -3,18 +3,18 @@ import { Carousel } from "react-bootstrap";
 const Home = () => {
     return (
         <div>
-            <h2 style={{ color: "#012a4a" }}>
+            <h2 style={{ color: "#012a4a" , textAlign:"center"}}>
                 {" "}
                 Bienvenue au cabinet dentaire.
             </h2>
-            <p>
+            <p style={{paddingLeft:"100px", paddingRight:"100px"}}>
                 {" "}
                 Notre équipe soignante vous accueille dans son cabinet à Jarry –
                 Baie-Mahault pour une prise en charge globale et personnalisée,
                 nous sommes spécialisé en esthétique dentaire, parodontologie,
                 chirurgie dentaire et implantologie.
             </p>
-            <p>
+            <p style={{paddingLeft:"100px", paddingRight:"100px"}}>
                 A ce titre, nous pourrons réaliser pour vous tous types de
                 prothèses dentaires, amovible (appareils dentaire) ou fixe
                 (couronnes et bridges), de prothèses implantaires (implant et

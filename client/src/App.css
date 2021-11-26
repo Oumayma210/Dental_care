@@ -1,5 +1,5 @@
 .App {
-    font-family: Lucida, cursive;
+    font-family: Times New Roman;
     /* background-color: #adb5bd; */
     background-position: center;
     background-size: cover;
@@ -22,6 +22,9 @@ h2 {
     font-size: 13px;
     font-weight: 600;
     padding-top: 5px;
+}
+footer {
+    background-color: black;
 }
 
 /* footer

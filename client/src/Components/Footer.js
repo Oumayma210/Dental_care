@@ -7,12 +7,14 @@ const Footer = () => {
         //     <p>66B Rue du Marechal Foch Hauptstross, 67190 Mutzig, France</p>
         //     cabinet.offerle@gmail.com 03 88 38 60 47
         // </footer>
-        <footer className="w-100 py-2 flex-shrink-0">
+        <footer
+            className="w-100 py-2 flex-shrink-0"
+        >
             <div className="container py-1">
                 <div className="row gy-2 gx-1">
                     <div className="col-lg-10 col-md-1">
-                        <h5 style={{color:"#012a4a"}}>Contact</h5>
-                        <p style={{color:"#012a4a"}}>
+                        <h5 style={{ color: "#FFE4C4" }}>Contact</h5>
+                        <p style={{ color: "#FFE4C4" }}>
                             <address>
                                 <span>Adresse:</span>
                                 Parvis Sainte-Alix 45A, 1150
@@ -30,7 +32,7 @@ const Footer = () => {
                         {/* 66B Rue du Marechal Foch Hauptstross, 67190 Mutzig,
                             France cabinet.offerle@gmail.com 03 88 38 60 47.
                         </p> */}
-                        <p style={{color:"#012a4a"}}>
+                        <p style={{ color: "#FFE4C4" }}>
                             © 2021. All rights reserved. <br />
                             Site développé par : Abdelli Oumayma{" "}
                         </p>
