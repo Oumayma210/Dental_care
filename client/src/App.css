@@ -1,11 +1,5 @@
 .App {
-    font-family: Times New Roman;
-    /* background-color: #adb5bd; */
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    align-items: center; */
+    font-family: Times New Roman !important;
 }
 
 html,
@@ -24,7 +18,7 @@ h2 {
     padding-top: 5px;
 }
 footer {
-    background-color: black;
+    background-color: black !important;
 }
 
 /* footer

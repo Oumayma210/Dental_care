@@ -57,7 +57,7 @@ const Navigation = () => {
                         </Nav.Link>
                     </Nav>
 
-                    <Nav>
+                    {/* <Nav>
                         <Nav.Link eventKey={2} href="EspaceDoctor">
                             <a
                                 href="/doctor/signin
@@ -68,7 +68,7 @@ const Navigation = () => {
                                 Espace médecin{" "}
                             </a>
                         </Nav.Link>
-                    </Nav>
+                    </Nav> */}
                     <Nav>
                         <Nav.Link
                             eventKey={2}
