@@ -19,11 +19,9 @@ const Signup = ({ history }) => {
                 justifyContent: "center",
                 flexWrap: "wrap",
                 width: "300px",
-                paddingLeft: "500px",
-                textAlign: "left",
-                paddingBottom: "200px",
                 fontSize: "20px",
                 fontWeight: "900px",
+                paddingLeft: "500px",
             }}
         >
             <div className="Container" id="container">
@@ -82,6 +80,7 @@ const Signup = ({ history }) => {
                     </Link>
                 </form>
             </div>
+
             {/* <RendezVousList /> */}
             <div style={{ textAlign: "center" }}>
                 <p>If you have already account click here!!</p>

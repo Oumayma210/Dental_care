@@ -57,7 +57,7 @@ exports.signin = async (req, res) => {
                 id: foundDoctor._id,
             },
             process.env.SECRET_KEY,
-            { expiresIn: "30d" }
+            { expiresIn: "1h" }
         );
 
         res.status(200).send({

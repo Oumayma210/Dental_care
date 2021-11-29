@@ -18,7 +18,7 @@ const Navigation = () => {
             }}
         >
             <Container>
-                <Navbar.Brand href="/" style={{ color: "#FFE4C4" }}>
+                <Navbar.Brand href="/" style={{ color: "#5dacbd" }}>
                     Cabinet Dentaire
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -26,14 +26,14 @@ const Navigation = () => {
                     <Nav className="me-auto">
                         <Link to="/">
                             <Nav.Link eventKey={2} href="#features">
-                                <a href="/" style={{ color: "#FFE4C4" }}>
+                                <a href="/" style={{ color: "#5dacbd" }}>
                                     Accueil
                                 </a>
                             </Nav.Link>
                         </Link>
                         <Link to="/about">
                             <Nav.Link eventKey={2} href="About">
-                                <a href="/about" style={{ color: "#FFE4C4" }}>
+                                <a href="/about" style={{ color: "#5dacbd" }}>
                                     A propos
                                 </a>
                             </Nav.Link>
@@ -42,7 +42,7 @@ const Navigation = () => {
                             <Nav.Link eventKey={2} href="#Nos services">
                                 <a
                                     href="/noservices"
-                                    style={{ color: "#FFE4C4" }}
+                                    style={{ color: "#5dacbd" }}
                                 >
                                     {" "}
                                     Nos services{" "}
@@ -51,29 +51,29 @@ const Navigation = () => {
                         </Link>
 
                         <Nav.Link eventKey={2} href="RendezVous">
-                            <a href="/signup" style={{ color: "#FFE4C4" }}>
+                            <a href="/signup" style={{ color: "#5dacbd" }}>
                                 Rendez-Vous
                             </a>
                         </Nav.Link>
                     </Nav>
 
-                    {/* <Nav>
+                    <Nav>
                         <Nav.Link eventKey={2} href="EspaceDoctor">
                             <a
                                 href="/doctor/signin
                             "
-                                style={{ color: "#FFE4C4" }}
+                                style={{ color: "#5dacbd" }}
                             >
                                 {" "}
                                 Espace médecin{" "}
                             </a>
                         </Nav.Link>
-                    </Nav> */}
+                    </Nav>
                     <Nav>
                         <Nav.Link
                             eventKey={2}
                             href="\contact"
-                            style={{ color: "#FFE4C4" }}
+                            style={{ color: "#5dacbd" }}
                         >
                             Contactez-Nous
                         </Nav.Link>

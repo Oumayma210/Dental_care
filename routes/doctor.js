@@ -13,7 +13,7 @@ router.post("/add_doctor", doctor.addAdmin);
 router.post("/signin", loginValidation(), validation, doctor.signin);
 //current
 router.get("/current", isAuthdoc, (req, res) => {
-    res.send(req.doctor);
+    res.send(req.Doctor);
 });
 //doctor--patient
 router.get("/", doctor.getAllPatient);
