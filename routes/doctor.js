@@ -13,17 +13,18 @@ router.post("/add_doctor", doctor.addAdmin);
 router.post("/signin", loginValidation(), validation, doctor.signin);
 //current
 router.get("/current", isAuthdoc, (req, res) => {
-    res.send(req.Doctor);
+    res.send(req.doctor);
 });
 //doctor--patient
 router.get("/", doctor.getAllPatient);
-router.get("/:id", doctor.getPatient);
 router.post("/add", doctor.addPatient);
-router.delete("/:_id", doctor.deletePatient);
+router.post("/addrdv", doctor.addrdv);
+router.get("/lrdv", doctor.getAllRendezVous);
+
 //doctor--rendezvous
 // router.get("/rdvv", patient.rendezvous);
-router.get("/lrdv", doctor.getAllRendezVous);
 router.put("/:_id", doctor.editRendez);
-router.post("/addrdv", doctor.addrdv);
+router.get("/:id", doctor.getPatient);
+router.delete("/:_id", doctor.deletePatient);
 router.delete("/deleterdv/:_id", doctor.deleteRDV);
 module.exports = router;
